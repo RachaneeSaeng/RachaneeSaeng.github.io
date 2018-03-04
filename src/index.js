@@ -2,7 +2,7 @@
 import Promise from 'promise-polyfill'; 
 import React from 'react'; 
 import ReactDOM from 'react-dom';
-import AppHeader from './components/AppHeader';
+import AppHeader from '../components/AppHeader';
 
 // To add to window
 if (!window.Promise) {
@@ -18,4 +18,4 @@ injectTapEventPlugin();
 
 
 
-ReactDOM.render(<AppHeader/>, document.getElementById('content'));
+ReactDOM.render(<AppHeader/>, document.getElementById('app'));
