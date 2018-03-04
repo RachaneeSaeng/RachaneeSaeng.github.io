@@ -19,7 +19,14 @@
         <div id="content"></div>   
        
 		<!-- App Script -->       
-        <script type="text/javascript" src="dist/bundle.js"></script>
-      
+        <script type="text/javascript" src="scripts/dist/main.js"></script>
+        <!-- <script type="text/javascript">
+            //do not use serverside-rendering to avoid conflict style
+           
+            ReactDOM.render(
+                React.createElement(Components.AppHeader),
+                document.getElementById("content")
+            );
+        </script> -->
     </body>
 </html>
