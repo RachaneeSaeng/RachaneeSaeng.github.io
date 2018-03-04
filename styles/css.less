@@ -1,0 +1,281 @@
+/*======================================= Common setting ========================================== */
+
+@bgColorNormal: #FEFEFE;
+@bgColorSuccess: #E8E8E8;
+@textColor: #6E6E6E;
+@headerColor: #585858;
+@footerHeadColor: #D4D4D4;
+@footerTextColor: #ABABAB;
+@footerBgColor: #2D3132;
+@navbarBgColor: #242728;
+@navbarColor: #FFFFFF;
+@hoverColor: #535A5E;
+@activeColor: #FFFFFF;
+@activeBgColor: #139E80;
+@btnColor: #42DCA3;
+@btnHoverColor: #139E80;
+
+.fontStyle {
+	font-family: 'Roboto', sans-serif;
+}
+
+.activeStyle {		
+	color: 	@activeColor;
+	background-color: @activeBgColor;
+}
+
+.btnSocialNormal {
+	border: solid 2px @btnColor;
+	color: @btnColor;
+}
+.btnSocialHover {		
+	border: solid 2px @btnHoverColor;
+	color: @btnHoverColor;  
+}
+
+.trans (@time: 0.3s) {
+-webkit-transition: all @time ease-in;
+-moz-transition: all @time ease-in;
+-o-transition: all @time ease-in;
+-ms-transition: all @time ease-in;
+transition: all @time ease-in;
+}
+
+.box-sizing {
+	box-sizing:border-box;
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+}
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow:         @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+/*================================================================================================== */
+
+.navbar {
+	.box-shadow(0 0 5px, 50%);
+	background: @navbarBgColor; 
+	.page-scroll {
+		color: white;
+	}
+	.navbar-nav {
+		letter-spacing: 1px;
+		li {
+			border-bottom: 5px solid transparent;	
+			a.active {
+				.activeStyle;	
+			}	  			
+		}
+	}
+}
+/* Style for large device */
+@media(min-width:768px) {
+    .navbar-fixed-top { 	
+		.navbar-brand {
+			font-size: 2em;
+			.trans;				
+		}		
+    } 	
+}
+
+p {   
+    line-height: 2.25em;
+    font-size: 1.2em;
+    color: @textColor;
+	.fontStyle;			
+}
+
+#experience li {   
+    padding: 4px;
+    color: @textColor;
+	.fontStyle;			
+}
+
+.experienceText {
+	font-size: 1.1em;
+}
+
+hr.devider {
+    margin: 2em auto 2em;
+    padding: 0;
+    max-width: 350px;
+    border: 0;
+    border-top: solid 2px;
+    text-align: center;
+    border-color: @headerColor;	
+}
+@media(max-width:600px) {
+	hr.devider {
+		margin: 2em auto 2em;
+		max-width: 250px;
+	}
+}
+
+header {
+    text-align: center;
+    color: @headerColor; 
+	.container {
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	img {
+		display: block;
+		margin: 0 auto 20px;
+	}
+	.intro-text .name {
+		.fontStyle;
+		display: block;    		
+		font-size: 2em;
+		font-weight: 500;
+		color: @headerColor;	
+	}
+	.intro-text .skills {
+		font-size: 1.2em;
+		font-weight: 400;
+		color: @textColor;
+	}
+}
+/* Style for large device */
+@media(min-width:768px) {
+	header {
+		.container {
+			padding-top: 150px;
+			padding-bottom: 100px;
+		}
+		.intro-text .name {
+			font-size: 4em; 	
+		}
+		.intro-text .skills {
+			font-size: 1.5em;
+		}
+	}    
+}
+
+section {	
+    padding: 85px 0;
+	background: @bgColorNormal;
+	color: @textColor;
+	h2 {
+		margin: 0;
+		font-size: 3em;
+	}
+	&.success {    
+		background: @bgColorSuccess;		
+		a.active{
+			outline: 0;
+		}
+	}
+}
+
+#portfolio {
+	* {
+		z-index: 2;
+	}
+	.portfolio-item {
+		right: 0;
+		margin: 0 0 15px;
+		.portfolio-link {
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			max-width: 400px;
+			.img-responsive {
+				.box-shadow(0 0 5px, 40%);
+				&:hover {
+					opacity: 0.75;
+				}
+			}			
+			.caption {
+				position: absolute;
+				width: 100%;
+				height: 100%;				
+				opacity: 0;	
+				background: rgba(24,188,156,0.9);				
+				.trans;
+				.caption-content {
+					position: absolute;
+					top: 50%;
+					width: 100%;
+					height: 20px;
+					margin-top: -12px;
+					text-align: center;
+					font-size: 20px;
+					font-weight: bold;
+					color: @activeColor;					
+					i {
+						margin-top: -12px;
+					}
+					h3,
+					h4 {
+						margin: 0;
+					}
+				}
+				&:hover {
+					opacity: 0.75;
+					background: rgba(24,188,156,0.75);
+				}
+			}
+		}
+	}
+}
+/* Style for large device */
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+footer {	
+    color: @footerHeadColor;
+	h4 {
+		margin-bottom: 10px;
+	}	
+	.footer-above {
+		padding: 20px 0px;		
+		background-color: @footerBgColor;
+		p {
+			color: @footerTextColor;
+		}
+		.btn-outline {			
+			.btnSocialNormal;
+			font-size: 25px;   
+			.trans;
+			&:hover {
+				.btnSocialHover;  
+			}
+			&:focus,
+			&:active
+			&.active {
+				.btnSocialNormal;
+				&:hover {
+					.btnSocialHover;					  
+				}    
+			}
+		}
+		.btn-social {
+			.btnSocialNormal;
+			display: inline-block;
+			width: 2.2em;
+			height: 2.2em;
+			border-radius: 100%;
+			text-align: bottom;
+			font-size: 1.5em;
+			line-height: 2.2em;
+			i {
+				margin-top: 0.5em;
+			}
+		}
+
+		.btn:focus,
+		.btn:active,
+		.btn.active {
+			outline: 0;
+		}
+
+	}	
+}

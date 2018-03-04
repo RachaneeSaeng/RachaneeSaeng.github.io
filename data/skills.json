@@ -1,0 +1,356 @@
+{
+    "data" : [
+        {
+            "name": "AngularJs",
+            "x": 3, "y": 35,
+            "marker": {
+                    "symbol": "url(images/frontend/angular.png)",
+                    "width": 40, "height": 44
+                },
+            "isShow": true
+        }, {
+            "name": "Babel",
+            "x": 10, "y": 40,
+            "marker": {
+                "symbol": "url(images/frontend/babel.png)",
+                "width": 70, "height": 30
+            },
+            "isShow": true 
+        }, {
+            "name": "CSS 3",
+            "x": 4, "y": 71,
+            "marker": {
+                "symbol": "url(images/frontend/css3.png)",
+                "width": 45, "height": 45
+            },
+            "isShow": true 
+        }, {
+            "name": "ECMAScript 6",
+            "x": 4, "y": 49,
+            "marker": {
+                "symbol": "url(images/frontend/es6.png)",
+                "width": 35, "height": 35
+            },
+            "isShow": true 
+        }, {
+            "name": "HTML 5",
+            "x": 17, "y": 72,
+            "marker": {
+                "symbol": "url(images/frontend/html5.png)",
+                "width": 40, "height": 40
+            },
+            "isShow": true 
+        }, {
+            "name": "jQuery",
+            "x": 22, "y": 66,
+            "marker": {
+                "symbol": "url(images/frontend/jQuery.png)",
+                "width": 40, "height": 43
+            },
+            "isShow": true 
+        }, {
+            "name": "Java Script",
+            "x": 11, "y": 78,
+            "marker": {
+                "symbol": "url(images/frontend/js.jpg)",
+                "width": 49, "height": 43
+            },
+            "isShow": true 
+        }, {
+            "name": "JavaScript XML",
+            "x": 15, "y": 57,
+            "marker": {
+                "symbol": "url(images/frontend/jsx.png)",
+                "width": 58, "height": 23
+            },
+            "isShow": false 
+        }, {
+            "name": "Less",
+            "x": 10, "y": 65,
+            "marker": {
+                "symbol": "url(images/frontend/less.jpg)",
+                "width": 52, "height": 25
+            },
+            "isShow": true        
+        }, {
+            "name": "React",
+            "x": 21, "y": 55,
+            "marker": {
+                "symbol": "url(images/frontend/react.png)",
+                "width": 45, "height": 40
+            } 
+        }, {
+            "name": "Type Script",
+            "x": 12, "y": 50,
+            "marker": {
+                "symbol": "url(images/frontend/typeScript.png)",
+                "width": 40, "height": 40
+            },
+            "isShow": true 
+        }, {
+            "name": "Webpack",
+            "x": 18, "y": 46,
+            "marker": {
+                "symbol": "url(images/frontend/webpack.png)",
+                "width": 40, "height": 42
+            },
+            "isShow": true         
+        }, {
+            "name": "C# .Net",
+            "x": 33, "y": 89,
+            "marker": {
+                "symbol": "url(images/backend/cSharp.png)",
+                "width": 43, "height": 41
+            },
+            "isShow": true 
+        }, {
+            "name": "Go",
+            "x": 38, "y": 37,
+            "marker": {
+                "symbol": "url(images/backend/golang.png)",
+                "width": 50, "height": 50
+            },
+            "isShow": true 
+        }, {
+            "name": "Oracle Database",
+            "x": 47, "y": 72,
+            "marker": {
+                "symbol": "url(images/backend/oracleDatabase.jpg)",
+                "width": 35, "height": 49
+            },
+            "isShow": true 
+        }, {
+            "name": "Redis",
+            "x": 30, "y": 26,
+            "marker": {"symbol": "url(images/backend/redis.png)",
+                "width": 75, "height": 25
+            },
+            "isShow": true 
+        }, {
+            "name": "SalesForce.com",
+            "x": 25, "y": 80,
+            "marker": {
+                "symbol": "url(images/backend/salesForce.png)",
+                "width": 69, "height": 43
+            },
+            "isShow": true 
+        }, {
+            "name": "SpecFlow",
+            "x": 40, "y": 80,
+            "marker": {"symbol": "url(images/backend/specflow.png)",
+                "width": 66, "height": 35
+            },
+            "isShow": true  
+        }, {
+             "name": "NodeJs",
+            "x": 40, "y": 51,
+            "marker": {"symbol": "url(images/backend/node.png)",
+                "width": 66, "height": 35
+            },
+            "isShow": true  
+        }, {
+             "name": "Python",
+            "x": 30, "y": 55,
+            "marker": {"symbol": "url(images/backend/python.png)",
+                "width": 50, "height": 50
+            },
+            "isShow": true  
+        }, {
+             "name": "Amazon Web Services",
+             "x": 31, "y": 40,            
+            "marker": {"symbol": "url(images/backend/aws.png)",
+                "width": 50, "height": 33
+            },
+            "isShow": true  
+        }, {
+            "name": "Microsoft Sql Server",
+            "x": 34, "y": 70,
+            "marker": {
+                "symbol": "url(images/backend/sqlServer.jpg)",
+                "width": 51, "height": 40
+            },
+            "isShow": true 
+        }, {
+            "name": "Ruby on Rails",
+            "x": 45, "y": 40,
+            "marker": {
+                "symbol": "url(images/backend/ruby.png)",
+                "width": 40, "height": 39
+            },
+            "isShow": true 
+        }, {       
+            "name": "Behavior-Driven Development",
+            "x": 55, "y": 73,
+            "marker": {"symbol": "url(images/practice/bdd.png)",
+                "width": 40, "height": 41
+            },
+            "isShow": true 
+        }, {
+            "name": "Test-Driven Development",
+            "x": 62, "y": 69,
+            "marker": {
+                "symbol": "url(images/practice/tdd.png)",
+                "width": 43, "height": 42
+            },
+            "isShow": true 
+        }, {
+            "name": "Design Pattern",
+            "x": 69, "y": 58,
+            "marker": {"symbol": "url(images/practice/designPattern.jpg)",
+                "width": 56, "height": 42
+            },
+            "isShow": true 
+        }, {
+            "name": "Functional Programming",
+            "x": 64, "y": 30,
+            "marker": {
+                "symbol": "url(images/practice/funcPro.png)",
+                "width": 40, "height": 40
+            },
+            "isShow": true 
+        }, {
+            "name": "Object Oriented Programming",
+            "x": 55, "y": 86,
+            "marker": {
+                "symbol": "url(images/practice/oop.jpg)",
+                "width": 61, "height": 24
+            },
+            "isShow": true 
+        }, {
+            "name": "MVC",
+            "x": 70, "y": 76,
+            "marker": {
+                "symbol": "url(images/practice/mvc.png)",
+                "width": 53, "height": 25
+            },
+            "isShow": true 
+        }, {
+            "name": "Progressive Web App",
+            "x": 55, "y": 53,
+            "marker": {
+                "symbol": "url(images/practice/progressive.png)",
+                "width": 44, "height": 43
+            },
+            "isShow": true 
+        }, {
+            "name": "Scrum",
+            "x": 62, "y": 81,
+            "marker": {
+                "symbol": "url(images/practice/scrum.png)",
+                "width": 66, "height": 23
+            },
+            "isShow": true 
+        }, {
+            "name": "Single-Page Application",
+            "x": 61, "y": 48,
+            "marker": {"symbol": "url(images/practice/spa.png)",
+                "width": 43, "height": 42
+            },
+            "isShow": true 
+        }, {
+            "name": "Atom",
+            "x": 81, "y": 60,
+            "marker": {
+                "symbol": "url(images/tools/atom.png)",
+                "width": 45, "height": 46
+            },
+            "isShow": true 
+        }, {
+            "name": "DotPeek",
+            "x": 87, "y": 55,
+            "marker": {
+                "symbol": "url(images/tools/dotPeek.jpg)",
+                "width": 40, "height": 40
+            },
+            "isShow": true 
+        }, {
+            "name": "GitHub",
+            "x": 85, "y": 77,
+            "marker": {
+                "symbol": "url(images/tools/gitHub.png)",
+                "width": 42, "height": 42
+            },
+            "isShow": true 
+        }, {
+            "name": "GitKraken",
+            "x": 93, "y": 77,
+            "marker": {
+                "symbol": "url(images/tools/gitKraken.png)",
+                "width": 43, "height": 43
+            },
+            "isShow": false 
+        }, {
+            "name": "Jira",
+            "x": 90, "y": 80,
+            "marker": {
+                "symbol": "url(images/tools/jira.png)",
+                "width": 54, "height": 54
+            },
+            "isShow": true 
+        }, {
+            "name": "Puppet",
+            "x": 81, "y": 42,
+            "marker": {
+                "symbol": "url(images/tools/puppet.png)",
+                "width": 74, "height": 30
+            },
+            "isShow": true 
+        }, {
+            "name": "Oracle Sql Developer",
+            "x": 98, "y": 76,
+            "marker": {
+                "symbol": "url(images/tools/sqlDeveloper.png)",
+                "width": 45, "height": 45
+            },
+            "isShow": true 
+        }, {
+            "name": "Sql Server Management",
+            "x": 78, "y": 74,
+            "marker": {
+                "symbol": "url(images/tools/sqlMgmt.jpg)",
+                "width": 40, "height": 40
+            },
+            "isShow": true 
+        }, {
+            "name": "TeamCity",
+            "x": 81, "y": 86,
+            "marker": {
+                "symbol": "url(images/tools/teamCity.png)",
+                "width": 36, "height": 36
+            },
+            "isShow": true 
+        }, {
+            "name": "Visual Studio",
+            "x": 95, "y": 87,
+            "marker": {
+                "symbol": "url(images/tools/vs.png)",
+                "width": 70, "height": 37
+            },
+            "isShow": true 
+        }, {
+            "name": "Firebase",
+            "x": 95, "y": 35,
+            "marker": {
+                "symbol": "url(images/tools/firebase.png)",
+                "width": 91, "height": 25
+            },
+            "isShow": true 
+        }, {
+            "name": "Tableau",
+            "x": 94, "y": 57,
+            "marker": {
+                "symbol": "url(images/tools/tableau.png)",
+                "width": 35, "height": 35
+            },
+            "isShow": true 
+        }, {
+            "name": "cSpider",
+            "x": 93, "y": 72,
+            "marker": {
+                "symbol": "url(images/tools/cSpider.png)",
+                "width": 45, "height": 56
+            },
+            "isShow": true 
+        }
+    ]
+}
