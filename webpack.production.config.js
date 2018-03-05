@@ -1,20 +1,23 @@
 (function () {
-    const webpack = require("webpack");
+    "use strict";
+    const webpack = require("webpack");    
     const path = require("path"); 
+
+    const CleanWebpackPlugin = require("clean-webpack-plugin");
     const HtmlWebPackPlugin = require("html-webpack-plugin");
-   
-    const config = {        
+    const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+    const config = {               
         entry: {
             main: ['./src/index.js', './styles/site.less']
         },
         output: {
-            filename: "[name].js", 
-            chunkFilename: "[name].js",           
+            filename: "[name]-[chunkhash].js", 
+            chunkFilename: "[name]-[chunkhash].js",           
             path: path.join(__dirname, '/dist'),
             publicPath: "/dist/"
-        },     
-        mode: 'development',
-        devtool: 'source-map',  
+        },       
+        mode: 'production',  
         resolve: {
             extensions: [".webpack.js", ".web.js", ".js", ".map"]
         },
@@ -34,33 +37,36 @@
                     test: /\.html$/,
                     use: [
                       {
-                        loader: "html-loader"
+                        loader: "html-loader",
+                        options: { minimize: true }
                       }
                     ]
                 },
                 {
                     test: /\.less$/,
-                    use: [{
-                        loader: "style-loader"
-                    }, {
-                        loader: "css-loader", options: {
-                            sourceMap: true
-                        }
-                    }, {
-                        loader: "less-loader", options: {
-                            sourceMap: true
-                        }
-                    }]
+                    use: ExtractTextPlugin.extract({
+                        use: [{
+                            loader: "css-loader"
+                        }, {
+                            loader: "less-loader"
+                        }],
+                        // use style-loader in development
+                        fallback: "style-loader"
+                    })
                 }
             ]
         },
-        plugins: [                       
+        plugins: [
+            new CleanWebpackPlugin("dist/"),           
             new HtmlWebPackPlugin({
                 template: "./src/index.html",
                 filename: "../index.html"
+            }),
+            new ExtractTextPlugin({
+                filename: "[name]-[chunkhash].css"       
             })
         ]
     };
 
     module.exports = config;
-    })();
+})();

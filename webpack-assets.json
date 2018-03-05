@@ -1,6 +1,0 @@
-{
-  "main": {
-    "js": "/dist/main.js",
-    "css": "/dist/main.css"
-  }
-}

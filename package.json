@@ -4,7 +4,7 @@
   "description": "Rachanee Saengkrajai's Portfolio.",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --config webpack.production.config.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,6 @@
     "promise-polyfill": "^7.1.0"
   },
   "devDependencies": {
-    "assets-webpack-plugin": "^3.5.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",
