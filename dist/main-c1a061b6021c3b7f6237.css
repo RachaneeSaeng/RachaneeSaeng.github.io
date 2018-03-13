@@ -190,20 +190,18 @@ section.success a.active {
     margin: 0 0 30px;
   }
 }
-footer {
+.footer-above {
   color: #D4D4D4;
-}
-footer h4 {
-  margin-bottom: 10px;
-}
-footer .footer-above {
   padding: 20px 0px;
   background-color: #2D3132;
 }
-footer .footer-above p {
+.footer-above h4 {
+  margin-bottom: 10px;
+}
+.footer-above p {
   color: #ABABAB;
 }
-footer .footer-above .btn-outline {
+.footer-above .btn-outline {
   border: solid 2px #42DCA3;
   color: #42DCA3;
   font-size: 25px;
@@ -213,21 +211,21 @@ footer .footer-above .btn-outline {
   -ms-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-footer .footer-above .btn-outline:hover {
+.footer-above .btn-outline:hover {
   border: solid 2px #139E80;
   color: #139E80;
 }
-footer .footer-above .btn-outline:focus,
-footer .footer-above .btn-outline:active footer .footer-above .btn-outline.active {
+.footer-above .btn-outline:focus,
+.footer-above .btn-outline:active .footer-above .btn-outline.active {
   border: solid 2px #42DCA3;
   color: #42DCA3;
 }
-footer .footer-above .btn-outline:focus:hover,
-footer .footer-above .btn-outline:active footer .footer-above .btn-outline.active:hover {
+.footer-above .btn-outline:focus:hover,
+.footer-above .btn-outline:active .footer-above .btn-outline.active:hover {
   border: solid 2px #139E80;
   color: #139E80;
 }
-footer .footer-above .btn-social {
+.footer-above .btn-social {
   border: solid 2px #42DCA3;
   color: #42DCA3;
   display: inline-block;
@@ -238,11 +236,11 @@ footer .footer-above .btn-social {
   font-size: 1.5em;
   line-height: 2.2em;
 }
-footer .footer-above .btn-social i {
+.footer-above .btn-social i {
   margin-top: 0.5em;
 }
-footer .footer-above .btn:focus,
-footer .footer-above .btn:active,
-footer .footer-above .btn.active {
+.footer-above .btn:focus,
+.footer-above .btn:active,
+.footer-above .btn.active {
   outline: 0;
 }
