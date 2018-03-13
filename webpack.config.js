@@ -5,7 +5,7 @@
    
     const config = {        
         entry: {
-            main: ['./src/index.js', './styles/site.less']
+            main: ['./src/index.js']
         },
         output: {
             filename: "[name].js", 
