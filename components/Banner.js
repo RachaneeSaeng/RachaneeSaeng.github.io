@@ -22,14 +22,10 @@ const styles = theme => ({
     "&:hover $backdrop": {
       zIndex: 2,
       opacity: 0.2
-    },
-    "&:hover $nameMarked": {
-      opacity: 0
-    },
+    },   
     "&:hover $myName": {
       opacity: 1,
-      zIndex: 3,
-      border: "4px solid currentColor"
+      zIndex: 3
     },
     "&:hover $myDesc": {
       opacity: 1,
@@ -53,18 +49,29 @@ const styles = theme => ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center"
-  },
+  },  
   myName: {
     position: "relative",
     padding: `${theme.spacing.unit * 2}px`,
     color: theme.palette.common.white,
-    transition: theme.transitions.create("border")
+    transition: theme.transitions.create("border"),
+    "&:hover": {
+      opacity: 1,
+      zIndex: 3,
+      border: "4px solid currentColor"
+    },
+    "&:hover $nameMarked": {
+      opacity: 0
+    }
   },
   nameMarked: {
-    position: "relative",
     height: 3,
     width: 200,
-    backgroundColor: theme.palette.common.white
+    backgroundColor: theme.palette.common.white,
+    position: 'absolute',
+    bottom: -2,
+    left: 'calc(50% - 100px)',
+    transition: theme.transitions.create('opacity'),
   },
   myDesc: {
     position: "relative",
@@ -154,16 +161,18 @@ class Banner extends React.Component {
       <div className={classes.root}>
         <div className={classes.backdrop} />
         <Grid className={classes.content}>
-          <ButtonBase focusRipple href="#intro" onClick={this.onClickNav}>
+          
+        <ButtonBase focusRipple href="#intro" onClick={this.onClickNav.bind(this)}>
             <Typography
+              component="span"
               variant="display2"
               align="center"
               className={classes.myName}
             >
               Rachanee Saengkrajai
+              <span className={classes.nameMarked} />
             </Typography>
           </ButtonBase>
-          <span className={classes.nameMarked} />
 
           <Typography
             variant="headline"

@@ -40,6 +40,10 @@ class Header extends React.Component {
 
   constructor(props){
     super(props);
+
+    this.onDrawerToggle = this.onDrawerToggle.bind(this);
+    this.onClickNav = this.onClickNav.bind(this);
+
     this.state = {
       mobileOpen: false
     };
@@ -96,7 +100,7 @@ class Header extends React.Component {
     return null;
   }
 
-  onDrawerToggle  ()  {
+  onDrawerToggle()  {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
 

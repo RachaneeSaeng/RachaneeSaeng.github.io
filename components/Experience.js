@@ -15,11 +15,7 @@ const styles = theme => ({
     backgroundAttachment: "fixed",
     backgroundPosition: "65% 50%",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    paddingTop: `${theme.spacing.unit * 10}px`,
-    paddingBottom: `${theme.spacing.unit * 8}px`,
-    paddingLeft: `${theme.spacing.unit}px`,
-    paddingRight: `${theme.spacing.unit}px`,
+    backgroundSize: "cover"   
   },
   headLine: {
     paddingBottom: `${theme.spacing.unit * 4}px`,
@@ -58,18 +54,13 @@ class Experience extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.root}>
-        <div className={classes.backdrop} />
-        <Grid className={classes.content}>
-          <Grid item xs={12}>
-            <Typography
-              variant="display1"
-              align="center"
-              className={classes.headLine}
-            >
+      <div className={classNames("content", classes.root)}>
+        <Typography className="headerLine">
               Experience
-            </Typography>
-          </Grid>
+         </Typography>
+
+          <div className={classes.backdrop} />
+
           <Grid item xs={12} sm={8} lg={6}>
             <div>
               <Typography variant="headline" className={classes.majorContent}>
@@ -125,8 +116,7 @@ class Experience extends React.Component {
               </Typography>
             </div>
           </Grid>
-        </Grid>
-      </div>
+        </div>
     );
   }
 }

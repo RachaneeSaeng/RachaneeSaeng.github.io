@@ -1,29 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
+import classNames from "classnames";
 import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
 import ReactHighcharts from "react-highcharts";
 
 const styles = theme => ({
   root: {
-    backgroundColor: "#ffffff",
-    paddingTop: `${theme.spacing.unit * 10}px`,
-    paddingBottom: `${theme.spacing.unit * 8}px`
-  },
-  headLine: {
-    paddingBottom: `${theme.spacing.unit * 4}px`
-  },
+    backgroundColor: "#ffffff"   
+  }
 });
 
 class Skill extends React.Component {
+  
   constructor(props){
     super(props);
+  
+    this.getSize = this.getSize.bind(this);
+    this.updateSize = this.updateSize.bind(this);    
+    this.genDataToPlot = this.genDataToPlot.bind(this);
+    this.createChartConfig = this.createChartConfig.bind(this);
+    this.setupChart = this.setupChart.bind(this);    
 
     this.chartData = undefined;
 
     this.state = {
-      currentSize: "S",
+      currentSize: this.getSize(),
       chartConfig: {}
     };
 
@@ -47,9 +50,8 @@ class Skill extends React.Component {
   
   componentWillMount() {    
     this.setupChart();
-    this.updateSize();
   }
-  componentDidMount() {
+  componentDidMount() {    
     window.addEventListener("resize", this.updateSize);
   }
   componentWillUnmount() {
@@ -192,7 +194,7 @@ class Skill extends React.Component {
   }
 
   setupChart() {
-    fetch("data/skills.json")
+    fetch('data/skills.json')
       .then(response => {
         if (response.ok) {
           response.json().then(json => {
@@ -225,19 +227,14 @@ class Skill extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Grid container
-        className={classes.root}
-        direction="column"
-        alignItems="center">
-        <Grid item xs={12}>
-          <Typography variant="display1" align="center" className={classes.headLine}>Skills</Typography>
-        </Grid>
+      <div className={classNames("content", classes.root)}>
+        <Typography className="headerLine">Skills</Typography>
         <Grid item xs={12} md={8}>
           {this.state.chartConfig.chart && (
             <ReactHighcharts config={this.state.chartConfig} ref="chart" />
           )}
         </Grid>
-      </Grid>
+      </div>
     );
   }
 }

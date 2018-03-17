@@ -102,13 +102,8 @@ class Port extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Grid container
-        className={classes.root}
-        direction="column"
-        alignItems="center">
-        <Grid item xs={12}>
-          <Typography variant="display1" align="center" className={classes.headLine}>Portfolio</Typography>
-        </Grid>
+      <div className="content">
+      <Typography className="headerLine">Portfolio</Typography>
         <Grid item xs={12} md={10} lg={8}>
           <Gallery
             columns={3}
@@ -125,7 +120,7 @@ class Port extends React.Component {
             isOpen={this.state.lightboxIsOpen}
           />
         </Grid>
-      </Grid>
+      </div>
     );
   }
 }
