@@ -103,8 +103,8 @@ class Port extends React.Component {
 
     return (
       <div className="content">
-      <Typography className="headerLine">Portfolio</Typography>
-        <Grid item xs={12} md={10} lg={8}>
+        <Typography className="headerLine">Portfolio</Typography>
+        <Grid item xs={12} md={10} lg={8} className="contentLine">
           <Gallery
             columns={3}
             margin={5}

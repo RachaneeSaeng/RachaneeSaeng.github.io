@@ -9,19 +9,16 @@ import IconButton from "material-ui/IconButton";
 const styles = theme => ({
   root: {
     backgroundColor: "#1f1f1f",
-    paddingTop: `${theme.spacing.unit * 4}px`,
-    paddingBottom: `${theme.spacing.unit * 4}px`
-  },
-  headLine: {
-    paddingBottom: `${theme.spacing.unit * 2}px`,
-    color: "#fdfdfd"
-  },
+    textAlign: "center",
+	  paddingTop: "2rem",
+	  paddingBottom: "2rem",
+  }, 
   contentLine: {
-    paddingBottom: `${theme.spacing.unit}px`,
+    paddingBottom: "1em",
     color: "#f0f0f0"
   },
   contentLine2: {
-    paddingBottom: `${theme.spacing.unit * 2}px`,
+    paddingBottom: "1.5em",
     color: "#f0f0f0"
   },
   btnOutLine: {
@@ -46,30 +43,11 @@ class Contact extends React.Component {
     const { classes, theme } = this.props;
 
     return (
-      <Grid
-        container
-        className={classes.root}
-        direction="column"
-        alignItems="center"
-      >
-        <Grid item xs={12}>
-          <Typography
-            variant="headline"
-            align="center"
-            className={classes.headLine}
-          >
-            Get In Touch
-          </Typography>
-        </Grid>
-        <Grid
-          container
-          item
-          xs={12}
-          sm={8}
-          lg={6}
-          direction="column"
-          alignItems="center"
-        >
+      <div  className={classes.root}>
+        <Typography variant="headline" align="center" style={{"color": "#fdfdfd"}} >
+          Get In Touch
+        </Typography>
+        <Grid container item xs={12} sm={8} lg={6}>
           <Typography
             variant="subheading"
             align="center"
@@ -108,7 +86,7 @@ class Contact extends React.Component {
             <Icon className={"fab fa-facebook-f"} />
           </IconButton>
         </Grid>
-      </Grid>
+      </div>
     );
   }
 }

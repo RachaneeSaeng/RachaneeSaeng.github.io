@@ -20,7 +20,7 @@ class Intro extends React.Component {
         <Typography className="headerLine">
             Introduction
           </Typography>
-        <Grid item xs={12} sm={8} lg={6}>
+        <Grid item xs={12} sm={8} lg={6} className="contentLine">
           <Typography variant="subheading" component="p" align="center" className={classes.contentLine}>
             I'm a dev girl who proficient in C# .Net with more than five years
             experience. I'm enthusiastic, fast learner and untiring. I enjoy

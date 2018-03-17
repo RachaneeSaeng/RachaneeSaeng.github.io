@@ -11,15 +11,11 @@ const styles = theme => ({
     position: "relative",
     minHeight: 350,
     backgroundImage:
-      "url(https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg?w=940&h=650&auto=compress&cs=tinysrgb)",
+      "url(https://images.pexels.com/photos/248515/pexels-photo-248515.png?w=940&h=650&auto=compress&cs=tinysrgb)",
     backgroundAttachment: "fixed",
     backgroundPosition: "65% 50%",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"   
-  },
-  headLine: {
-    paddingBottom: `${theme.spacing.unit * 4}px`,
-    color: "#ffffff"
   },
   backdrop: {
     position: "absolute",
@@ -29,18 +25,8 @@ const styles = theme => ({
     bottom: 0,
     backgroundColor: theme.palette.common.black,
     opacity: 0.4,
-    transition: theme.transitions.create("opacity")
-  },
-  content: {
-    position: "relative",
-    width: "100%",
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    zIndex: 3
-  },
+    transition: theme.transitions.create("opacity"),
+  },  
   majorContent: {
     color: "#ffffff"
   },
@@ -54,15 +40,13 @@ class Experience extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classNames("content", classes.root)}>
-        <Typography className="headerLine">
+      <div className={classNames("content", classes.root)}>      
+       
+        <Typography style={{"color": "#ffffff"}} className="headerLine">
               Experience
          </Typography>
-
-          <div className={classes.backdrop} />
-
-          <Grid item xs={12} sm={8} lg={6}>
-            <div>
+          <Grid item xs={12} sm={8} lg={6} className="contentLine">
+            <div align="left">
               <Typography variant="headline" className={classes.majorContent}>
                 Agoda.com
               </Typography>
@@ -90,7 +74,7 @@ class Experience extends React.Component {
                 </ul>
               </Typography>
             </div>
-            <div>
+            <div align="left">
               <Typography variant="headline" className={classes.majorContent}>
                 Seagate Technology
               </Typography>

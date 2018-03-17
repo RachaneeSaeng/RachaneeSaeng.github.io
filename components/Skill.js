@@ -81,7 +81,7 @@ class Skill extends React.Component {
 
   genDataToPlot(data, size) {
     var multiplyer = 1;
-    if (size === "S") multiplyer = 0.4;
+    if (size === "S") multiplyer = 0.5;
     else if (size === "M") multiplyer = 0.7;
 
     return data.filter(d => d.isShow).map(function(d) {
@@ -103,7 +103,8 @@ class Skill extends React.Component {
       chart: {
         type: "scatter",
         renderTo: "skillChart",
-        height: 450,
+        width: null,
+        height: null,
         animation: {
           duration: 100
         }
@@ -117,7 +118,7 @@ class Skill extends React.Component {
         min: 0,
         max: 100,
         tickInterval: 12.5,
-        labels: {
+        labels: {          
           formatter: function() {
             var value = xLabels[this.value];
             return value ? value : " ";
@@ -151,6 +152,7 @@ class Skill extends React.Component {
         min: 0,
         tickInterval: 20,
         labels: {
+          enabled: this.state.currentSize === "S" ? false : true,
           formatter: function() {
             var value = yLabels[this.value];
             return value ? value : " ";
@@ -229,9 +231,9 @@ class Skill extends React.Component {
     return (
       <div className={classNames("content", classes.root)}>
         <Typography className="headerLine">Skills</Typography>
-        <Grid item xs={12} md={8}>
+        <Grid item xs={12} md={8} className="contentLine">
           {this.state.chartConfig.chart && (
-            <ReactHighcharts config={this.state.chartConfig} ref="chart" />
+            <ReactHighcharts config={this.state.chartConfig} ref="chart"/>
           )}
         </Grid>
       </div>
