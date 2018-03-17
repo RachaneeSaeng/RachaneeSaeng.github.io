@@ -3,123 +3,90 @@ import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
-import Gallery from "react-photo-gallery";
-import Lightbox from "react-images";
+import {PhotoSwipeGallery} from 'react-photoswipe';
 
 const styles = theme => ({
-  root: {
-    backgroundColor: "#ffffff",
-    paddingTop: `${theme.spacing.unit * 10}px`,
-    paddingBottom: `${theme.spacing.unit * 8}px`
-  },
-  headLine: {
-    paddingBottom: `${theme.spacing.unit * 4}px`
+  thumnailImg: {
+    width: "165px",
+    margin: "0 6px 6px 0",  
+    [theme.breakpoints.up("sm")]: {
+      width: "210px",
+      margin: "0 10px 10px 0",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "260px",
+      margin: "0 12px 12x 0"
+    }
   }
 });
-
-const photos = [
-  {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-    width: 1,
-    height: 1
-  },
-  {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-    width: 3,
-    height: 4
-  },
-  {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-    width: 4,
-    height: 3
-  },
-  {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-    width: 4,
-    height: 3
-  }
-];
 
 class Port extends React.Component {
 
   constructor(props){
     super(props);
+
+    this.getGalleryData = this.getGalleryData.bind(this);   
+    this.getThumbnailContent = this.getThumbnailContent.bind(this);
+
     this.state = {
-      currentImage: 0,
-      lightboxIsOpen: false
+      photos: [],
+      columns: 0
     };
   }
 
-  openLightbox (event, obj) {
-    this.setState({
-      currentImage: obj.index,
-      lightboxIsOpen: true
-    });
+  componentWillMount() {    
+    this.getGalleryData();
   }
-  closeLightbox ()  {
-    this.setState({
-      currentImage: 0,
-      lightboxIsOpen: false
-    });
+ 
+  getGalleryData() {
+    fetch('data/ports.json')
+      .then(response => {
+        if (response.ok) {
+          response.json().then(json => {
+            var data = json.data;
+
+            var realData = data.filter(d => d.isShow).map(function(d) {  
+              var size = d.imgSize.split("x");           
+              return {
+                src: d.imgUrl,
+                thumbnail: d.thumnailUrl,
+                w: size[0],
+                h: size[1],
+                title: d.description             
+              };
+            });
+
+            this.setState({ photos: realData });
+
+          });
+        } else {
+          console.log(response);
+        }
+      })
+      .catch(error => {
+        console.log(
+          "There has been a problem with your fetch operation: " + error.message
+        );
+      });
   }
-  gotoPrevious()  {
-    this.setState({
-      currentImage: this.state.currentImage - 1
-    });
-  }
-  gotoNext() {
-    this.setState({
-      currentImage: this.state.currentImage + 1
-    });
+
+  getThumbnailContent(item) {  
+    const { classes } = this.props;
+    return (
+        <img src={item.thumbnail} className={classes.thumnailImg}/>
+    );
   }
 
   render() {
     const { classes } = this.props;
-
     return (
       <div className="content">
         <Typography className="headerLine">Portfolio</Typography>
-        <Grid item xs={12} md={10} lg={8} className="contentLine">
-          <Gallery
-            columns={3}
-            margin={5}
-            photos={photos}
-            onClick={this.openLightbox}
-          />
-          <Lightbox
-            images={photos}
-            onClose={this.closeLightbox}
-            onClickPrev={this.gotoPrevious}
-            onClickNext={this.gotoNext}
-            currentImage={this.state.currentImage}
-            isOpen={this.state.lightboxIsOpen}
-          />
-        </Grid>
+        <Grid id="port-gallery-grid" item xs={12} md={10} lg={8} className="contentLine">
+        <PhotoSwipeGallery items={this.state.photos}
+              thumbnailContent={(item) => this.getThumbnailContent(item)}
+             /> 
+        </Grid>        
       </div>
     );
   }

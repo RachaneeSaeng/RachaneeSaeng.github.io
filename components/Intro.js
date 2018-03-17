@@ -6,7 +6,7 @@ import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
 
 const styles = theme => ({ 
-  contentLine: {    
+  paragraph: {    
     lineHeight: "2em",
   }
 });
@@ -21,13 +21,13 @@ class Intro extends React.Component {
             Introduction
           </Typography>
         <Grid item xs={12} sm={8} lg={6} className="contentLine">
-          <Typography variant="subheading" component="p" align="center" className={classes.contentLine}>
+          <Typography variant="subheading" component="p" align="center" className={classes.paragraph}>
             I'm a dev girl who proficient in C# .Net with more than five years
             experience. I'm enthusiastic, fast learner and untiring. I enjoy
             turning complex requirements into system architecture and develop it
             to be intelligent softwares.
           </Typography>
-          <Typography variant="subheading" component="p" align="center" className={classes.contentLine}>
+          <Typography variant="subheading" component="p" align="center" className={classes.paragraph}>
             I'm a dev girl who proficient in C# .Net with more than five years
             experience. I'm enthusiastic, fast learner and untiring. I enjoy
             turning complex requirements into system architecture and develop it

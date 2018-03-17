@@ -10,14 +10,14 @@
         "thumnailUrl": "images/portfolio/Python_s.jpg",
         "imgUrl": "images/portfolio/Python.jpg",
         "imgSize": "1600x1194",
-        "description": "Python Programming Language",
+        "description": "Python Programming",
 		    "isShow": true
       },
        {
         "thumnailUrl": "images/portfolio/Go_s.jpg",
         "imgUrl": "images/portfolio/Go.jpg",
         "imgSize": "1600x1194",
-        "description": "Go Programming Language",
+        "description": "Go Programming",
 		    "isShow": true
       }, {
         "thumnailUrl": "images/portfolio/Certificate_1s.jpg",

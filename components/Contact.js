@@ -10,23 +10,27 @@ const styles = theme => ({
   root: {
     backgroundColor: "#1f1f1f",
     textAlign: "center",
-	  paddingTop: "2rem",
-	  paddingBottom: "2rem",
+	  paddingTop: "1.8rem",
+	  paddingBottom: "1.8rem",
   }, 
   contentLine: {
+    paddingTop: "1.2em",
+		"margin": "auto",
+	},
+  line1: {
     paddingBottom: "1em",
     color: "#f0f0f0"
   },
-  contentLine2: {
-    paddingBottom: "1.5em",
+  line2: {
+    paddingBottom: "0.7em",
     color: "#f0f0f0"
   },
   btnOutLine: {
     border: "2.4px solid #1DDFB1",
     color: "#1DDFB1",
-    fontSize: 25,
-    width: 40,
-    height: 40,
+    fontSize: "1.5em",
+    width: "2em",
+    height: "2em",
     borderRadius: "100%",
     textAlign: "bottom",
     opacity: 0.7,
@@ -47,23 +51,15 @@ class Contact extends React.Component {
         <Typography variant="headline" align="center" style={{"color": "#fdfdfd"}} >
           Get In Touch
         </Typography>
-        <Grid container item xs={12} sm={8} lg={6}>
-          <Typography
-            variant="subheading"
-            align="center"
-            className={classes.contentLine}
-          >
+        <Grid item xs={12} sm={8} lg={6} className={classes.contentLine}>
+          <Typography variant="subheading" align="center" className={classes.line1} >
             E-mail: rachanee.saeng@gmail.com
           </Typography>
-          <Typography
-            variant="subheading"
-            align="center"
-            className={classes.contentLine2}
-          >
+          <Typography variant="subheading" align="center" className={classes.line2}>
             Tel: +669 3324 4514
           </Typography>
         </Grid>
-        <Grid xs={12} sm={8} md={6} item container justify="space-around">
+        <Grid xs={10} sm={6} md={4} item container justify="space-around" className={classes.contentLine}>
           <IconButton
             className={classes.btnOutLine}
             href="https://th.linkedin.com/in/RachaneeS"
