@@ -4,6 +4,7 @@ import { withStyles } from "material-ui/styles";
 import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
 import {PhotoSwipeGallery} from 'react-photoswipe';
+import 'react-photoswipe/lib/photoswipe.css';
 
 const styles = theme => ({
   thumnailImg: {

@@ -9,7 +9,9 @@
 
     const config = {               
         entry: {
-            main: ['./src/index.js']
+            main: ['./src/index.js'
+                , './styles/site.less'
+            ]
         },
         output: {
             filename: "[name]-[chunkhash].js", 
@@ -50,9 +52,29 @@
                         }, {
                             loader: "less-loader"
                         }],
-                        // use style-loader in development
                         fallback: "style-loader"
                     })
+                },
+                {
+                    test: /\.css$/,
+                    use: ExtractTextPlugin.extract({
+                        use: [{
+                            loader: "css-loader"                       
+                        }],
+                        fallback: "style-loader"
+                    })
+                },
+                {
+                    test: /\.(png|jpg|gif|swf)$/,
+                    use: [{
+                        loader: "file-loader"
+                    }]
+                },
+                {
+                    test: /\.(ttf|eot|svg|woff(2)?)(\S+)?$/,
+                    use: [{
+                        loader: "file-loader"
+                    }]
                 }
             ]
         },

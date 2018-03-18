@@ -5,7 +5,9 @@
    
     const config = {        
         entry: {
-            main: ['./src/index.js', './styles/site.less']
+            main: ['./src/index.js'
+                , './styles/site.less'
+            ]
         },
         output: {
             filename: "[name].js", 
@@ -50,6 +52,28 @@
                         loader: "less-loader", options: {
                             sourceMap: true
                         }
+                    }]
+                },
+                {
+                    test: /\.css$/,
+                    use: [{
+                        loader: "style-loader"
+                    }, {
+                        loader: "css-loader", options: {
+                            sourceMap: true
+                        }
+                    }]
+                },
+                {
+                    test: /\.(png|jpg|gif|swf)$/,
+                    use: [{
+                        loader: "file-loader"
+                    }]
+                },
+                {
+                    test: /\.(ttf|eot|svg|woff(2)?)(\S+)?$/,
+                    use: [{
+                        loader: "file-loader"
                     }]
                 }
             ]
