@@ -27,7 +27,7 @@ class Skill extends React.Component {
 
     this.state = {
       currentSize: this.getSize(),
-      chartConfig: {}
+      chartConfig: undefined
     };
 
     this.xAxisLabels = {
@@ -48,11 +48,9 @@ class Skill extends React.Component {
     };
   }
   
-  componentWillMount() {    
-    this.setupChart();
-  }
   componentDidMount() {    
-    window.addEventListener("resize", this.updateSize);
+    this.setupChart();
+    window.addEventListener("resize", this.updateSize);    
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateSize);
@@ -232,9 +230,12 @@ class Skill extends React.Component {
       <div className={classNames("content", classes.root)}>
         <Typography className="headerLine">Skills</Typography>
         <Grid item xs={12} md={8} className="contentLine">
-          {this.state.chartConfig.chart && (
-            <ReactHighcharts config={this.state.chartConfig} ref="chart"/>
-          )}
+
+          {this.state.chartConfig ? 
+            <ReactHighcharts config={this.state.chartConfig} ref="chart"/> : 
+            <img src="images/preloader.gif" />
+          }
+
         </Grid>
       </div>
     );

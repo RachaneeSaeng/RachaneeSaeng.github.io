@@ -35,7 +35,7 @@ class Port extends React.Component {
     };
   }
 
-  componentWillMount() {    
+  componentDidMount() {    
     this.getGalleryData();
   }
  
@@ -83,10 +83,14 @@ class Port extends React.Component {
     return (
       <div className="content">
         <Typography className="headerLine">Portfolio</Typography>
-        <Grid id="port-gallery-grid" item xs={12} md={10} lg={8} className="contentLine">
-        <PhotoSwipeGallery items={this.state.photos}
-              thumbnailContent={(item) => this.getThumbnailContent(item)}
-             /> 
+        <Grid item xs={12} md={10} lg={8} className="contentLine">
+
+          {this.state.photos.length > 0 ? 
+            <PhotoSwipeGallery items={this.state.photos} 
+              thumbnailContent={(item) => this.getThumbnailContent(item)}/> : 
+            <img src="images/preloader.gif" />
+          }
+          
         </Grid>        
       </div>
     );
