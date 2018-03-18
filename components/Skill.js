@@ -8,7 +8,7 @@ import ReactHighcharts from "react-highcharts";
 
 const styles = theme => ({
   root: {
-    backgroundColor: "#ffffff"   
+    backgroundColor: "#fefefe"   
   }
 });
 

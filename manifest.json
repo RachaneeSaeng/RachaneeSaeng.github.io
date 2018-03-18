@@ -1,5 +1,5 @@
 {
-  "name": "Rachanee Profile",
+  "name": "Rachanee's Profile",
   "short_name": "Rachanee",
   "icons": [{
     "src": "images/icons/icon-32x32.png",
@@ -28,6 +28,6 @@
     }],
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#7FE0C6",
-  "theme_color": "#7FE0C6"
+  "background_color": "#1DDFB1",
+  "theme_color": "#1DDFB1"
 }

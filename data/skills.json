@@ -210,7 +210,7 @@
             "x": 69, "y": 76,
             "marker": {
                 "symbol": "url(images/methodology/scrum.png)",
-                "width": 66, "height": 22
+                "width": 63, "height": 21
             },
             "isShow": true 
         }, {
@@ -218,7 +218,7 @@
             "x": 70, "y": 42,
             "marker": {
                 "symbol": "url(images/methodology/blockchain.png)",
-                "width": 40, "height": 50
+                "width": 36, "height": 45
             },
             "isShow": true
             }, {
