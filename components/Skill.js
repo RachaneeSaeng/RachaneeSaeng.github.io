@@ -6,11 +6,11 @@ import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
 import ReactHighcharts from "react-highcharts";
 
-const styles = theme => ({
+const styles = {
   root: {
     backgroundColor: "#fefefe"   
   }
-});
+};
 
 class Skill extends React.Component {
   
@@ -100,7 +100,6 @@ class Skill extends React.Component {
     return {
       chart: {
         type: "scatter",
-        renderTo: "skillChart",
         width: null,
         height: null,
         animation: {

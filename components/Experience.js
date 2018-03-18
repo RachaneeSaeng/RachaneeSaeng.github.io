@@ -4,7 +4,6 @@ import { withStyles } from "material-ui/styles";
 import classNames from "classnames";
 import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
-import Paper from "material-ui/Paper";
 
 const styles = theme => ({
   root: {
@@ -106,7 +105,8 @@ class Experience extends React.Component {
 }
 
 Experience.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(Experience);
+export default withStyles(styles, { withTheme: true })(Experience);

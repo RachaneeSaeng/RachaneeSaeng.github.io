@@ -1,15 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
-import classNames from "classnames";
 import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
 
-const styles = theme => ({ 
+const styles = { 
   paragraph: {    
     lineHeight: "2em",
   }
-});
+};
 
 class Intro extends React.Component {
   render() {
