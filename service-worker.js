@@ -9,6 +9,8 @@ var mainFiles = [
   "/data/skills.json", 
   "/images/favicon3.png", 
   "/images/preloader.gif",
+  "/images/banner_bg.jpeg",
+  "/images/exp_bg.jpeg",
   "/images/backend/aws.png", 
   "/images/backend/cSharp.png", 
   "/images/backend/golang.png", 
@@ -98,8 +100,8 @@ var dataFiles = [
   "/data/ports.json", 
   "/data/skills.json",  
   "/index.html", 
-  "/dist/main-550a6007210b71cb0b2e.css", 
-  "/dist/main-550a6007210b71cb0b2e.js"
+  "/dist/main-72dce346a43e78db7987.css", 
+  "/dist/main-72dce346a43e78db7987.js"
 ];
 
 self.addEventListener('install', function(e) {

@@ -10,8 +10,7 @@ const styles = theme => ({
     position: "relative",
     minHeight: 350,
     height: "100vh",
-    backgroundImage:
-      "url(https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)",
+    backgroundImage: "url(images/banner_bg.jpeg)",
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

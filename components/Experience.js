@@ -9,8 +9,7 @@ const styles = theme => ({
   root: {
     position: "relative",
     minHeight: 350,
-    backgroundImage:
-      "url(https://images.pexels.com/photos/248515/pexels-photo-248515.png?w=940&h=650&auto=compress&cs=tinysrgb)",
+    backgroundImage: "url(images/exp_bg.jpeg)",
     backgroundAttachment: "fixed",
     backgroundPosition: "65% 50%",
     backgroundRepeat: "no-repeat",
@@ -23,14 +22,18 @@ const styles = theme => ({
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.4,
+    opacity: 0.3,
     transition: theme.transitions.create("opacity"),
   },  
   majorContent: {
-    color: "#ffffff"
+    position: "relative",
+    color: "#ffffff",
+    zIndex: 3
   },
   minorContent: {
-    color: "#fdfdfd"
+    position: "relative",
+    color: "#fdfdfd",
+    zIndex: 3
   }
 });
 
@@ -40,8 +43,8 @@ class Experience extends React.Component {
 
     return (
       <div className={classNames("content", classes.root)}>      
-       
-        <Typography style={{"color": "#ffffff"}} className="headerLine">
+        <div className={classes.backdrop} />
+        <Typography style={{"color": "#ffffff"}} className={classNames("headerLine", classes.majorContent)}>
               Experience
          </Typography>
           <Grid item xs={12} sm={8} lg={6} className="contentLine">
