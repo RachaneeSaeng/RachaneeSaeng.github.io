@@ -22,17 +22,17 @@ const styles = theme => ({
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.3,
+    opacity: 0.4,
     transition: theme.transitions.create("opacity"),
   },  
   majorContent: {
     position: "relative",
-    color: "#ffffff",
+    color: "#f7f7f7",
     zIndex: 3
   },
   minorContent: {
     position: "relative",
-    color: "#fdfdfd",
+    color: "#f5f5f5",
     zIndex: 3
   }
 });

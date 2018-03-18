@@ -19,8 +19,7 @@ const styles = theme => ({
       zIndex: 1
     },
     "&:hover $backdrop": {
-      zIndex: 2,
-      opacity: 0.2
+      opacity: 0.22
     },   
     "&:hover $myName": {
       opacity: 1,
@@ -33,6 +32,7 @@ const styles = theme => ({
   },
   backdrop: {
     position: "absolute",
+	zIndex: 2,
     left: 0,
     right: 0,
     top: 0,
@@ -54,9 +54,9 @@ const styles = theme => ({
     padding: `${theme.spacing.unit * 2}px`,
     color: theme.palette.common.white,
     transition: theme.transitions.create("border"),
+	zIndex: 3,
     "&:hover": {
-      opacity: 1,
-      zIndex: 3,
+      opacity: 1,      
       border: "4px solid currentColor"
     },
     "&:hover $nameMarked": {
@@ -68,6 +68,7 @@ const styles = theme => ({
     width: 200,
     backgroundColor: theme.palette.common.white,
     position: 'absolute',
+	zIndex: 3,
     bottom: -2,
     left: 'calc(50% - 100px)',
     transition: theme.transitions.create('opacity'),
@@ -75,7 +76,8 @@ const styles = theme => ({
   myDesc: {
     position: "relative",
     padding: `${theme.spacing.unit * 2}px`,
-    color: theme.palette.common.white
+    color: theme.palette.common.white,
+	zIndex: 3
   }
 });
 
