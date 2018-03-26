@@ -42,7 +42,7 @@
         "imgUrl": "images/portfolio/html5.jpg",
         "imgSize": "1413x1000",
         "description": "HTML5 Coding Essentials and Best Practices",
-		    "isShow": true
+		    "isShow": false
       }, {
         "thumnailUrl": "images/portfolio/pm_s.jpg",
         "imgUrl": "images/portfolio/pm.jpg",
@@ -72,13 +72,13 @@
         "imgUrl": "images/portfolio/mobile.jpg",
         "imgSize": "1402x1000",
         "description": "Cross-platform Mobile Social Application with HTML5",
-		    "isShow": true
+		    "isShow": false
       }, {
         "thumnailUrl": "images/portfolio/force_s.jpg",
         "imgUrl": "images/portfolio/force.jpg",
         "imgSize": "1401x1000",
         "description": "Force.com Development Quick Start",
-		    "isShow": true
+		    "isShow": false
       }, {
         "thumnailUrl": "images/portfolio/sigsixma_s.jpg",
         "imgUrl": "images/portfolio/sigsixma.jpg",

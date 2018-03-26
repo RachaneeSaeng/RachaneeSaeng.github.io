@@ -27,13 +27,14 @@ const styles = theme => ({
   },  
   majorContent: {
     position: "relative",
-    color: "#f7f7f7",
+    color: "#f5f5f5",
     zIndex: 3
   },
   minorContent: {
     position: "relative",
-    color: "#f5f5f5",
-    zIndex: 3
+    color: "#f3f3f3",
+    zIndex: 3,
+    lineHeight: "1.75em",
   }
 });
 
@@ -56,7 +57,7 @@ class Experience extends React.Component {
                 IT Finance Development: <em>April 2016 - Present</em>
               </Typography>
               <Typography variant="subheading" className={classes.minorContent}>
-                <ul>
+                <ul>                  
                   <li>
                     Develop and enhance applications to work on financial
                     payment and reconciliation systems. These systems are the
@@ -64,14 +65,18 @@ class Experience extends React.Component {
                     time for each customer bookings.
                   </li>
                   <li>
-                    The applications are developed by various C# .Net
-                    technologies i.e. Windows service, WPF, WCF, MVC and Web API
-                    service.
+                    The applications are developed by various technologies 
+                    e.g. React, RabbitMq, Hangfire, .Net Core, WCF, .Net Web API, Windows Service etc.
                   </li>
                   <li>
-                    We use many cutting edge technologies and tools in
-                    development process e.g. Git, TeamCity, Puppet, cSpider and
-                    Jira etc.
+                    We use many cutting-edge technologies and tools in
+                    development process e.g. Git, TeamCity, Puppet, Jira etc.
+                  </li>
+                  <li>
+                    Be a scrum master who coordinate among team member to ensure that all the roadblocks 
+                    are cleared in order to complete the sprint as planned. 
+                    If there are any extra interruption coming during the sprint, 
+                    I will communicate with POs and scrum members to adjust the scope.
                   </li>
                 </ul>
               </Typography>
@@ -86,16 +91,20 @@ class Experience extends React.Component {
               <Typography variant="subheading" className={classes.minorContent}>
                 <ul>
                   <li>
-                    Captured user requirements and analyze business conditions
+                    Capture user requirements and analyze business conditions
                     in order to design architecture and programming logic.
                   </li>
                   <li>
-                    Developed, integrated, tested and implemented related
+                    Develope, integrate, teste and implemente related
                     application components including front-end, back-end and
-                    database.
+                    database. 
                   </li>
                   <li>
-                    Provided system documents including system requirement,
+                    The applications are developed by various technologies 
+                    i.e. C# .Net, Salesforce.com, PL/SQL script etc.
+                  </li>
+                  <li>
+                    Provide system documents i.e. system requirement,
                     design, test plan and user guide.
                   </li>
                 </ul>

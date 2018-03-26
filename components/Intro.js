@@ -7,6 +7,9 @@ import Grid from "material-ui/Grid";
 const styles = { 
   paragraph: {    
     lineHeight: "2em",
+    textIndent: "5em",
+    paddingTop: "1em",
+    paddingTop: "1em",
   }
 };
 
@@ -20,17 +23,18 @@ class Intro extends React.Component {
             Introduction
           </Typography>
         <Grid item xs={12} sm={8} lg={6} className="contentLine">
-          <Typography variant="subheading" component="p" align="center" className={classes.paragraph}>
-            I'm a dev girl who proficient in C# .Net with more than five years
-            experience. I'm enthusiastic, fast learner and untiring. I enjoy
-            turning complex requirements into system architecture and develop it
-            to be intelligent softwares.
-          </Typography>
-          <Typography variant="subheading" component="p" align="center" className={classes.paragraph}>
-            I'm a dev girl who proficient in C# .Net with more than five years
-            experience. I'm enthusiastic, fast learner and untiring. I enjoy
-            turning complex requirements into system architecture and develop it
-            to be intelligent softwares.
+          <Typography variant="subheading" component="p" align="left" className={classes.paragraph}>
+            I believe that coding is a skill which can change the world, it is empowering and fulfilling. 
+            The thing I love about coding is that it combines creativity and logic, 
+            I really enjoy turning complex requirements into system design and turn it into programming logics. 
+            I usually think beyond expectation on the system design step in order 
+            to create a scalable/maintainable system and/or to provide better user experience.
+          </Typography>         
+          <Typography variant="subheading" component="p" align="left" className={classes.paragraph}>
+            I like to learn new things to broaden my mind. Knowing many ideas and technologies make me likes 
+            a soldier with full set of weapons who can choose the right tool for the right problem.
+             There are many methodologies and technologies I want to build up my skill right now 
+             i.e. Machine Learning, Blockchain, Functional Programing, Golang, Progressive Web App etc.
           </Typography>
         </Grid>
       </div>
