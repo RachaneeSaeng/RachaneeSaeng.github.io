@@ -27,12 +27,12 @@ const styles = theme => ({
   },  
   majorContent: {
     position: "relative",
-    color: "#e0e0e0",
+    color: "#e1e1e1",
     zIndex: 3
   },
   minorContent: {
     position: "relative",
-    color: "#e0e0e0",
+    color: "#e1e1e1",
     zIndex: 3,
     lineHeight: "1.5em",
   }
@@ -45,7 +45,7 @@ class Experience extends React.Component {
     return (
       <div className={classNames("content", classes.root)}>      
         <div className={classes.backdrop} />
-        <Typography style={{"color": "#e0e0e0"}} className={classNames("headerLine", classes.majorContent)}>
+        <Typography style={{"color": "#e1e1e1"}} className={classNames("headerLine", classes.majorContent)}>
               Experience
          </Typography>
           <Grid item xs={12} sm={8} lg={6} className="contentLine">
