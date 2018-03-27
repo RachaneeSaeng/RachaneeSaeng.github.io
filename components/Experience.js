@@ -89,8 +89,7 @@ class Experience extends React.Component {
               <Typography variant="subheading" className={classes.minorContent}>
                 <ul>
                   <li>
-                    Capture user requirements and analyze business conditions
-                    in order to design architecture and programming logic.
+                    Capture user requirements and analyze business conditions to design architecture and programming logic.
                   </li>
                   <li>
                     Develope, integrate, teste and implemente related
