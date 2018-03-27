@@ -99,8 +99,8 @@ var dataFiles = [
   "/data/ports.json", 
   "/data/skills.json",  
   "/index.html", 
-  "/dist/main-5678e58f53fe811fbe8b.css", 
-  "/dist/main-5678e58f53fe811fbe8b.js"
+  "/dist/main-86d2faf9b4550fc61fa1.css", 
+  "/dist/main-86d2faf9b4550fc61fa1.js"
 ];
 
 self.addEventListener('install', function(e) {
