@@ -3,8 +3,8 @@ var mainFiles = [
   "/", 
   "/data/ports.json", 
   "/data/skills.json",
-  "/dist/main-5efbe0270ee607cd34a8.css", 
-  "/dist/main-5efbe0270ee607cd34a8.js",
+  "/dist/main-09f0abdb75b7f91038ac.css", 
+  "/dist/main-09f0abdb75b7f91038ac.js",
   "/dist/b257fa9c5ac8c515ac4d77a667ce2943.svg",   
   "/dist/e3f799c6dec9af194c86decdf7392405.png", 
   "/dist/e34aafbb485a96eaf2a789b2bf3af6fe.gif",    
@@ -125,11 +125,16 @@ self.addEventListener('fetch', function(e) {
   e.respondWith(
     caches.match(e.request)
     .then(cacheResponse => {
-      return cacheResponse || fetch(e.request).then(response => {return response;});
+      return cacheResponse || 
+      fetch(e.request)
+      .then(response => {return response;})
+      .catch(error => console.log(error));
     })
     .catch(error => {
       console.log('load from normal fetch, having problem to load from cache');
-      return fetch(e.request).then(response => {return response;});
+      return fetch(e.request)
+      .then(response => {return response;})
+      .catch(error => console.log(error));
     })
   );  
 });

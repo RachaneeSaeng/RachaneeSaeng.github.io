@@ -19,11 +19,11 @@ const styles = theme => ({
 	},
   line1: {
     paddingBottom: "1em",
-    color: "#eeeeee"
+    color: "#e0e0e0"
   },
   line2: {
     paddingBottom: "0.7em",
-    color: "#eeeeee"
+    color: "#e0e0e0"
   },
   btnOutLine: {
     border: "2.4px solid #1DDFB1",
@@ -48,7 +48,7 @@ class Contact extends React.Component {
 
     return (
       <div  className={classes.root}>
-        <Typography variant="headline" align="center" style={{"color": "#f0f0f0"}} >
+        <Typography variant="headline" align="center" style={{"color": "#e0e0e0"}} >
           Get In Touch
         </Typography>
         <Grid item xs={12} sm={8} lg={6} className={classes.contentLine}>
