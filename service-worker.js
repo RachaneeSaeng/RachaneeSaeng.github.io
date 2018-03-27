@@ -1,4 +1,3 @@
-
 var mainCacheName = 'RachaneeProfile_AppShell_v1';
 var mainFiles = [  
   "/", 
@@ -100,8 +99,8 @@ var dataFiles = [
   "/data/ports.json", 
   "/data/skills.json",  
   "/index.html", 
-  "/dist/main-f47e15ee973906c5e849.css", 
-  "/dist/main-f47e15ee973906c5e849.js"
+  "/dist/main-5678e58f53fe811fbe8b.css", 
+  "/dist/main-5678e58f53fe811fbe8b.js"
 ];
 
 self.addEventListener('install', function(e) {
