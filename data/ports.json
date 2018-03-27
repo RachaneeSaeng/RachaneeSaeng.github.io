@@ -37,13 +37,7 @@
         "imgSize": "1419x1004",
         "description": "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3",
 		    "isShow": true
-      }, {
-        "thumnailUrl": "images/portfolio/html5_s.jpg",
-        "imgUrl": "images/portfolio/html5.jpg",
-        "imgSize": "1413x1000",
-        "description": "HTML5 Coding Essentials and Best Practices",
-		    "isShow": false
-      }, {
+      }, {        
         "thumnailUrl": "images/portfolio/pm_s.jpg",
         "imgUrl": "images/portfolio/pm.jpg",
         "imgSize": "1294x1000",
@@ -67,72 +61,18 @@
         "imgSize": "1421x1000",
         "description": "Sharpen Your Creativity Skills",
 		    "isShow": true
-      }, {
-        "thumnailUrl": "images/portfolio/mobile_s.jpg",
-        "imgUrl": "images/portfolio/mobile.jpg",
-        "imgSize": "1402x1000",
-        "description": "Cross-platform Mobile Social Application with HTML5",
-		    "isShow": false
-      }, {
-        "thumnailUrl": "images/portfolio/force_s.jpg",
-        "imgUrl": "images/portfolio/force.jpg",
-        "imgSize": "1401x1000",
-        "description": "Force.com Development Quick Start",
-		    "isShow": false
-      }, {
-        "thumnailUrl": "images/portfolio/sigsixma_s.jpg",
-        "imgUrl": "images/portfolio/sigsixma.jpg",
-        "imgSize": "1417x1000",
-        "description": "Sig Sixma Brown Belt Training",
-		    "isShow": false
-      }, {
-        "thumnailUrl": "images/portfolio/vs_s.jpg",
-        "imgUrl": "images/portfolio/vs.jpg",
-        "imgSize": "1304x1000",
-        "description": "Programming in C# with Microsoft Visual Studio 2010",
-		    "isShow": false
-      }, {
-        "thumnailUrl": "images/portfolio/a10s.jpg",
-        "imgUrl": "images/portfolio/a10.jpg",
-        "imgSize": "1419x1000",
-        "description": "1st Winner in 38th University Sport Competition",
-		    "isShow": false
-      }, {
-        "thumnailUrl": "images/portfolio/a11s.jpg",
-        "imgUrl": "images/portfolio/a11.jpg",
-        "imgSize": "709x1000",
-        "description": "3rd Winner in 39th National Sport Competition",
-		    "isShow": false
-      }, {
+      }, {        
         "thumnailUrl": "images/portfolio/chairman_s.jpg",
         "imgUrl": "images/portfolio/chairman.jpg",
         "imgSize": "720x1000",
         "description": "Chairperson of KKU Bridge Club 2009",
 		    "isShow": true
-      }, {
-        "thumnailUrl": "images/portfolio/a13s.jpg",
-        "imgUrl": "images/portfolio/a13.jpg",
-        "imgSize": "1416x1000",
-        "description": "2nd Winner in Bridge Tournament of Higher Education 2009",
-		    "isShow": false
-      }, {
-        "thumnailUrl": "images/portfolio/a14s.jpg",
-        "imgUrl": "images/portfolio/a14.jpg",
-        "imgSize": "707x1000",
-        "description": "1st Winner in 38th National Sport Competition",
-		    "isShow": false
-      }, {
+      }, {        
         "thumnailUrl": "images/portfolio/jicf_s.jpg",
         "imgUrl": "images/portfolio/jicf.jpg",
         "imgSize": "1399x1000",
         "description": "KKU JICF Scholarship Program",
 		    "isShow": true
-      }, {
-        "thumnailUrl": "images/portfolio/a16s.jpg",
-        "imgUrl": "images/portfolio/a16.jpg",
-        "imgSize": "1399x1000",
-        "description": "2nd Winner in 36th University Sport Competition",
-		    "isShow": false
       }
     ]
 }
