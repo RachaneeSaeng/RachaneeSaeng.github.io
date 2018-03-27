@@ -1,6 +1,10 @@
-var mainCacheName = 'RachaneeProfile_AppShell_v1';
+var mainCacheName = 'RachaneeProfile_AppShell_v2';
 var mainFiles = [  
   "/", 
+  "/data/ports.json", 
+  "/data/skills.json",
+  "/dist/main-86d2faf9b4550fc61fa1.css", 
+  "/dist/main-86d2faf9b4550fc61fa1.js",
   "/dist/b257fa9c5ac8c515ac4d77a667ce2943.svg",   
   "/dist/e3f799c6dec9af194c86decdf7392405.png", 
   "/dist/e34aafbb485a96eaf2a789b2bf3af6fe.gif",    
@@ -91,24 +95,13 @@ var mainFiles = [
   "https://fonts.googleapis.com/icon?family=Material+Icons",
   "https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css",
   "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css",
-  "https://use.fontawesome.com/releases/v5.0.8/css/brands.css"
-];
-
-var dataCacheName = 'RachaneeProfile_Data';
-var dataFiles = [  
-  "/data/ports.json", 
-  "/data/skills.json",  
-  "/index.html", 
-  "/dist/main-86d2faf9b4550fc61fa1.css", 
-  "/dist/main-86d2faf9b4550fc61fa1.js"
+  "https://use.fontawesome.com/releases/v5.0.8/css/brands.css"  
 ];
 
 self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open(dataCacheName).then(cache => {
-      return cache.addAll(dataFiles);
-    }),
-    caches.open(mainCacheName).then(cache => {      
+  e.waitUntil(    
+    caches.open(mainCacheName)
+    .then(cache => {      
       return cache.addAll(mainFiles);
     })    
   );
@@ -116,9 +109,10 @@ self.addEventListener('install', function(e) {
 
 self.addEventListener('activate', function(e) {
   e.waitUntil(
-    caches.keys().then(keyList => {
+    caches.keys()
+    .then(keyList => {
       return Promise.all(keyList.map(key => {
-        if (key !== mainCacheName && key !== dataCacheName) {          
+        if (key !== mainCacheName) {          
           return caches.delete(key);
         }
       }));
@@ -127,24 +121,15 @@ self.addEventListener('activate', function(e) {
   return self.clients.claim();
 });
 
-self.addEventListener('fetch', function(e) {
-  var relativeUrl = e.request.url.replace(/^(?:\/\/|[^\/]+)*/, "");
-  
-  if (dataFiles.indexOf(relativeUrl) > -1 && navigator.onLine) {  
-    e.respondWith(
-      caches.open(dataCacheName).then(cache => {
-        return fetch(e.request).then(response => {
-          cache.put(e.request.url, response.clone());
-          return response;
-        });
-      })
-    );  
-  } 
-  else {    
-    e.respondWith(
-      caches.match(e.request).then(response => {
-        return response || fetch(e.request);
-      })
-    );
-  }
+self.addEventListener('fetch', function(e) {  
+  e.respondWith(
+    caches.match(e.request)
+    .then(cacheResponse => {
+      return cacheResponse || fetch(e.request).then(response => {return response;});
+    })
+    .catch(error => {
+      console.log('load from normal fetch, having problem to load from cache');
+      return fetch(e.request).then(response => {return response;});
+    })
+  );  
 });
