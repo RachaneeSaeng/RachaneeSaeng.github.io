@@ -9,14 +9,14 @@ import 'react-photoswipe/lib/photoswipe.css';
 const styles = theme => ({
   thumnailImg: {
     width: "165px",
-    margin: "0 6px 6px 0",  
+    margin: "6px", 
     [theme.breakpoints.up("sm")]: {
       width: "210px",
-      margin: "0 10px 10px 0",
+      margin: "10px",
     },
     [theme.breakpoints.up("md")]: {
       width: "260px",
-      margin: "0 12px 12x 0"
+      margin: "14px"
     }
   }
 });

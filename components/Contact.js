@@ -19,11 +19,11 @@ const styles = theme => ({
 	},
   line1: {
     paddingBottom: "1em",
-    color: "#f0f0f0"
+    color: "#eeeeee"
   },
   line2: {
     paddingBottom: "0.7em",
-    color: "#f0f0f0"
+    color: "#eeeeee"
   },
   btnOutLine: {
     border: "2.4px solid #1DDFB1",
@@ -48,7 +48,7 @@ class Contact extends React.Component {
 
     return (
       <div  className={classes.root}>
-        <Typography variant="headline" align="center" style={{"color": "#fdfdfd"}} >
+        <Typography variant="headline" align="center" style={{"color": "#f0f0f0"}} >
           Get In Touch
         </Typography>
         <Grid item xs={12} sm={8} lg={6} className={classes.contentLine}>
@@ -76,7 +76,7 @@ class Contact extends React.Component {
           </IconButton>
           <IconButton
             className={classes.btnOutLine}
-            href="https://www.facebook.com/zZPLEZz"
+            href="https://www.facebook.com/RachaneeSaeng"
             target="_blank"
           >
             <Icon className={"fab fa-facebook-f"} />

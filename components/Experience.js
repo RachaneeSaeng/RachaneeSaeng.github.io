@@ -34,7 +34,7 @@ const styles = theme => ({
     position: "relative",
     color: "#f3f3f3",
     zIndex: 3,
-    lineHeight: "1.75em",
+    lineHeight: "1.5em",
   }
 });
 
@@ -70,13 +70,11 @@ class Experience extends React.Component {
                   </li>
                   <li>
                     We use many cutting-edge technologies and tools in
-                    development process e.g. Git, TeamCity, Puppet, Jira etc.
+                    development process e.g. Git, TeamCity, Puppet, Jira, Grafana, Kibana etc.
                   </li>
                   <li>
-                    Be a scrum master who coordinate among team member to ensure that all the roadblocks 
+                    Be a scrum master to coordinate among team member to ensure that all the roadblocks 
                     are cleared in order to complete the sprint as planned. 
-                    If there are any extra interruption coming during the sprint, 
-                    I will communicate with POs and scrum members to adjust the scope.
                   </li>
                 </ul>
               </Typography>
@@ -101,7 +99,7 @@ class Experience extends React.Component {
                   </li>
                   <li>
                     The applications are developed by various technologies 
-                    i.e. C# .Net, Salesforce.com, PL/SQL script etc.
+                    e.g. C# .Net, Salesforce.com, PL/SQL script, Ruby on Rails etc.
                   </li>
                   <li>
                     Provide system documents i.e. system requirement,

@@ -1,35 +1,35 @@
-<html> <head> <meta name=viewport content="width=device-width,initial-scale=1"> <meta name=author content="Rachanee Saengkrajai"> <meta name=description content="Portfolio of Rachanee Saengkrajai"> <meta charset=utf-8> <title>Rachanee Saengkrajai</title> <link rel=icon type=image/png href=images/favicon3.png /> <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"/> <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"/> <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css> <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.0.8/css/brands.css> <link href="/dist/main-2cca607776b2190c8914.css" rel="stylesheet"></head> <body> <div id=app> </div> <script> // register service worker
-            if ('serviceWorker' in navigator) {
+<!DOCTYPE html> <html> <head> <meta name=viewport content="width=device-width,initial-scale=1"> <meta name=author content="Rachanee Saengkrajai"> <meta name=description content="Portfolio of Rachanee Saengkrajai"> <meta charset=utf-8> <title>Rachanee Saengkrajai</title> <link rel=icon type=image/png href=images/favicon3.png /> <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"/> <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"/> <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css> <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.0.8/css/brands.css> <link href="/dist/main-5678e58f53fe811fbe8b.css" rel="stylesheet"></head> <body> <div id=app> </div> <script> // register service worker
+            if (navigator && 'serviceWorker' in navigator) {
 
                 window.addEventListener('load', () => {
                 const swUrl = './service-worker.js';
                 navigator.serviceWorker
                     .register(swUrl)
                     .then(registration => {
-                    // eslint-disable-next-line no-param-reassign
-                    registration.onupdatefound = () => {
-                        const installingWorker = registration.installing;
-                        installingWorker.onstatechange = () => {
-                        if (installingWorker.state === 'installed') {
-                            if (navigator.serviceWorker.controller) {
-                            // At this point, the old content will have been purged and
-                            // the fresh content will have been added to the cache.
-                            // It's the perfect time to display a "New content is
-                            // available; please refresh." message in your web app.
-                            console.log('New content is available; please refresh.'); // eslint-disable-line no-console
-                            } else {
-                            // At this point, everything has been precached.
-                            // It's the perfect time to display a
-                            // "Content is cached for offline use." message.
-                            console.log('Content is cached for offline use.'); // eslint-disable-line no-console
+                        // eslint-disable-next-line no-param-reassign
+                        registration.onupdatefound = () => {
+                            const installingWorker = registration.installing;
+                            installingWorker.onstatechange = () => {
+                            if (installingWorker.state === 'installed') {
+                                if (navigator.serviceWorker.controller) {
+                                // At this point, the old content will have been purged and
+                                // the fresh content will have been added to the cache.
+                                // It's the perfect time to display a "New content is
+                                // available; please refresh." message in your web app.
+                                console.log('New content is available; please refresh.'); // eslint-disable-line no-console
+                                } else {
+                                // At this point, everything has been precached.
+                                // It's the perfect time to display a
+                                // "Content is cached for offline use." message.
+                                console.log('Content is cached for offline use.'); // eslint-disable-line no-console
+                                }
                             }
-                        }
+                            };
                         };
-                    };
                     })
                     .catch(error => {
-                    console.error('Error during service worker registration:', error);
+                        console.error('Error during service worker registration:', error);
                     });
                 });
 
-            } </script> <script type="text/javascript" src="/dist/main-2cca607776b2190c8914.js"></script></body> </html>
+            } </script> <script type="text/javascript" src="/dist/main-5678e58f53fe811fbe8b.js"></script></body> </html>
