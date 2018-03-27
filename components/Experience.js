@@ -93,8 +93,7 @@ class Experience extends React.Component {
                   </li>
                   <li>
                     Develope, integrate, teste and implemente related
-                    application components including front-end, back-end and
-                    database. 
+                    application components including front-end, back-end, and database. 
                   </li>
                   <li>
                     The applications are developed by various technologies 
