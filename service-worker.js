@@ -3,8 +3,8 @@ var mainFiles = [
   "/", 
   "/data/ports.json", 
   "/data/skills.json",
-  "/dist/main-a4a631b99ee2ee621a62.css", 
-  "/dist/main-a4a631b99ee2ee621a62.js",
+  "/dist/main-2c1ac24c9d6987cfb12d.css", 
+  "/dist/main-2c1ac24c9d6987cfb12d.js",
   "/dist/b257fa9c5ac8c515ac4d77a667ce2943.svg",   
   "/dist/e3f799c6dec9af194c86decdf7392405.png", 
   "/dist/e34aafbb485a96eaf2a789b2bf3af6fe.gif",    
@@ -103,8 +103,9 @@ self.addEventListener('install', function(e) {
     caches.open(mainCacheName)
     .then(cache => {      
       Promise.all(
-        mainFiles.map(function(url){cache.add(url)})
-      );
+        mainFiles.map(url => {cache.add(url)})
+      )
+      .catch(error => console.log(error));
     })    
   );
 });
@@ -119,6 +120,7 @@ self.addEventListener('activate', function(e) {
         }
       }));
     })
+    .catch(error => console.log(error))
   ); 
   return self.clients.claim();
 });
