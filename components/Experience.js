@@ -92,7 +92,7 @@ class Experience extends React.Component {
                     Capture user requirements and analyze business conditions to design architecture and programming logic.
                   </li>
                   <li>
-                    Develope, integrate, teste and implemente related
+                    Develop, integrate, teste and implement related
                     application components including front-end, back-end, and database. 
                   </li>
                   <li>
