@@ -98,7 +98,7 @@
             "isShow": true 
         }, {
             "name": "Go",
-            "x": 38, "y": 39,
+            "x": 30, "y": 52,
             "marker": {
                 "symbol": "url(images/backend/golang.png)",
                 "width": 50, "height": 50
@@ -129,21 +129,21 @@
             "isShow": true 
         }, {
              "name": "Python",
-            "x": 30, "y": 47,
+			 "x": 38, "y": 39,            
             "marker": {"symbol": "url(images/backend/python.png)",
                 "width": 50, "height": 50
             },
             "isShow": true  
         }, {
              "name": "Amazon Web Services",
-             "x": 31, "y": 32,            
+             "x": 31, "y": 33,            
             "marker": {"symbol": "url(images/backend/aws.png)",
                 "width": 50, "height": 33
             },
             "isShow": true  
         }, {
             "name": "Microsoft Sql Server",
-            "x": 39, "y": 67,
+            "x": 39, "y": 68,
             "marker": {
                 "symbol": "url(images/backend/sqlServer.jpg)",
                 "width": 51, "height": 40
