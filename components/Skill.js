@@ -192,7 +192,7 @@ class Skill extends React.Component {
   }
 
   setupChart() {
-    fetch('data/skills.json')
+    fetch('data/skills_v3.json')
       .then(response => {
         if (response.ok) {
           response.json().then(json => {
