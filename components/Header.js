@@ -1,44 +1,46 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import Drawer from "material-ui/Drawer";
-import AppBar from "material-ui/AppBar";
-import Toolbar from "material-ui/Toolbar";
-import Typography from "material-ui/Typography";
-import List, { ListItem, ListItemIcon, ListItemText } from "material-ui/List";
-import Divider from "material-ui/Divider";
-import IconButton from "material-ui/IconButton";
-import Hidden from "material-ui/Hidden";
-import MenuIcon from "material-ui-icons/Menu";
-import Button from "material-ui/Button";
-import AccountCircleIcon from "material-ui-icons/AccountCircle";
-import WorkIcon from "material-ui-icons/Work";
-import StarIcon from "material-ui-icons/Star";
-import MessageIcon from "material-ui-icons/Message";
-import ArchiveIcon from "material-ui-icons/Archive";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import Hidden from '@material-ui/core/Hidden';
+import MenuIcon from '@material-ui/icons/Menu';
+import Button from '@material-ui/core/Button';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import WorkIcon from '@material-ui/icons/Work';
+import StarIcon from '@material-ui/icons/Star';
+import MessageIcon from '@material-ui/icons/Message';
+import ArchiveIcon from '@material-ui/icons/Archive';
 
 const drawerWidth = 240;
 
 const styles = theme => ({
   appBar: {
-    position: "fixed"
+    position: 'fixed'
   },
   flexTitle: {
     flex: 1,
-    justifyContent: "space-between"
+    justifyContent: 'space-between'
   },
   drawerPaper: {
     width: drawerWidth,
-    [theme.breakpoints.up("md")]: {
-      position: "relative"
+    [theme.breakpoints.up('md')]: {
+      position: 'relative'
     }
   },
   toolbar: theme.mixins.toolbar
 });
 
 class Header extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.onDrawerToggle = this.onDrawerToggle.bind(this);
@@ -74,9 +76,9 @@ class Header extends React.Component {
       var step = Math.min(1, (new Date().getTime() - start) / time);
 
       if (prop) {
-        parentElm["scrollTop"] = from + step * (to - from);
+        parentElm['scrollTop'] = from + step * (to - from);
       } else {
-        parentElm.style["scrollTop"] = from + step * (to - from);
+        parentElm.style['scrollTop'] = from + step * (to - from);
       }
       if (step === 1) {
         clearInterval(timer);
@@ -84,9 +86,9 @@ class Header extends React.Component {
     }, 25);
 
     if (prop) {
-      parentElm["scrollTop"] = from;
+      parentElm['scrollTop'] = from;
     } else {
-      parentElm.style["scrollTop"] = from;
+      parentElm.style['scrollTop'] = from;
     }
   }
 
@@ -100,17 +102,17 @@ class Header extends React.Component {
     return null;
   }
 
-  onDrawerToggle()  {
+  onDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
 
-  onClickNav (e) {
+  onClickNav(e) {
     e.preventDefault();
 
-    var targetId = e.target.getAttribute("href");
+    var targetId = e.target.getAttribute('href');
 
     if (!targetId) {
-      targetId = this.findParentWithAttr(e.target, "href");
+      targetId = this.findParentWithAttr(e.target, 'href');
     }
 
     if (targetId) {
@@ -175,7 +177,7 @@ class Header extends React.Component {
         <Hidden mdUp>
           <Drawer
             variant="temporary"
-            anchor={theme.direction === "rtl" ? "right" : "left"}
+            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
             open={this.state.mobileOpen}
             onClose={this.onDrawerToggle}
             classes={{
@@ -185,7 +187,7 @@ class Header extends React.Component {
               keepMounted: true // Better open performance on mobile
             }}
           >
-            <div className={classes.toolbar}></div>
+            <div className={classes.toolbar} />
             <Divider />
             <List component="nav">
               <ListItem button href="#intro" onClick={this.onClickNav}>

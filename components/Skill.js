@@ -1,27 +1,26 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import classNames from "classnames";
-import Typography from "material-ui/Typography";
-import Grid from "material-ui/Grid";
-import ReactHighcharts from "react-highcharts";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import classNames from 'classnames';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import ReactHighcharts from 'react-highcharts';
 
 const styles = {
   root: {
-    backgroundColor: "#fefefe"   
+    backgroundColor: '#fefefe'
   }
 };
 
 class Skill extends React.Component {
-  
-  constructor(props){
+  constructor(props) {
     super(props);
-  
+
     this.getSize = this.getSize.bind(this);
-    this.updateSize = this.updateSize.bind(this);    
+    this.updateSize = this.updateSize.bind(this);
     this.genDataToPlot = this.genDataToPlot.bind(this);
     this.createChartConfig = this.createChartConfig.bind(this);
-    this.setupChart = this.setupChart.bind(this);    
+    this.setupChart = this.setupChart.bind(this);
 
     this.chartData = undefined;
 
@@ -31,29 +30,29 @@ class Skill extends React.Component {
     };
 
     this.xAxisLabels = {
-      0: " ",
-      12.5: "Front-End",
-      37.5: "Back-End",
-      62.5: "Methodology",
-      87.5: "Tools"
+      0: ' ',
+      12.5: 'Front-End',
+      37.5: 'Back-End',
+      62.5: 'Methodology',
+      87.5: 'Tools'
     };
 
     this.yAxisLabels = {
-      0: " ",
-      20: "Beginner",
-      40: "Familiar",
-      60: "Proficient",
-      80: "Expert",
-      100: "Master"
+      0: ' ',
+      20: 'Beginner',
+      40: 'Familiar',
+      60: 'Proficient',
+      80: 'Expert',
+      100: 'Master'
     };
   }
-  
-  componentDidMount() {    
+
+  componentDidMount() {
     this.setupChart();
-    window.addEventListener("resize", this.updateSize);    
+    window.addEventListener('resize', this.updateSize);
   }
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateSize);
+    window.removeEventListener('resize', this.updateSize);
   }
 
   updateSize() {
@@ -65,22 +64,22 @@ class Skill extends React.Component {
       var chart = this.refs.chart.getChart();
       chart.series[0].setData(dataToPlot, true);
       // consider to show/hide yAxis label
-      if (size === "S") chart.yAxis[0].update({ labels: { enabled: false } });
+      if (size === 'S') chart.yAxis[0].update({ labels: { enabled: false } });
       else chart.yAxis[0].update({ labels: { enabled: true } });
     }
   }
 
   getSize() {
     var pageSize = window.innerWidth;
-    if (pageSize < 600) return "S";
-    if (pageSize < 1000) return "M";
-    return "L";
+    if (pageSize < 600) return 'S';
+    if (pageSize < 1000) return 'M';
+    return 'L';
   }
 
   genDataToPlot(data, size) {
     var multiplyer = 1;
-    if (size === "S") multiplyer = 0.5;
-    else if (size === "M") multiplyer = 0.7;
+    if (size === 'S') multiplyer = 0.5;
+    else if (size === 'M') multiplyer = 0.7;
 
     return data.filter(d => d.isShow).map(function(d) {
       return {
@@ -99,7 +98,7 @@ class Skill extends React.Component {
   createChartConfig(data, xLabels, yLabels) {
     return {
       chart: {
-        type: "scatter",
+        type: 'scatter',
         width: null,
         height: null,
         animation: {
@@ -115,30 +114,30 @@ class Skill extends React.Component {
         min: 0,
         max: 100,
         tickInterval: 12.5,
-        labels: {          
+        labels: {
           formatter: function() {
             var value = xLabels[this.value];
-            return value ? value : " ";
+            return value ? value : ' ';
           }
         },
         plotBands: [
           {
-            color: "#FAFAFA",
+            color: '#FAFAFA',
             from: 0,
             to: 25
           },
           {
-            color: "#F6F6F6",
+            color: '#F6F6F6',
             from: 25,
             to: 50
           },
           {
-            color: "#FAFAFA",
+            color: '#FAFAFA',
             from: 50,
             to: 75
           },
           {
-            color: "#F6F6F6",
+            color: '#F6F6F6',
             from: 75,
             to: 100
           }
@@ -149,10 +148,10 @@ class Skill extends React.Component {
         min: 0,
         tickInterval: 20,
         labels: {
-          enabled: this.state.currentSize === "S" ? false : true,
+          enabled: this.state.currentSize === 'S' ? false : true,
           formatter: function() {
             var value = yLabels[this.value];
-            return value ? value : " ";
+            return value ? value : ' ';
           }
         }
       },
@@ -177,15 +176,15 @@ class Skill extends React.Component {
             }
           },
           tooltip: {
-            headerFormat: "",
-            pointFormat: "<b>{point.name}</b>"
+            headerFormat: '',
+            pointFormat: '<b>{point.name}</b>'
           }
         }
       },
       series: [
         {
-          name: "Skill",
-          color: "rgba(96, 128, 153, .5)",
+          name: 'Skill',
+          color: 'rgba(96, 128, 153, .5)',
           data: data
         }
       ]
@@ -217,7 +216,7 @@ class Skill extends React.Component {
       })
       .catch(error => {
         console.log(
-          "There has been a problem with your fetch operation: " + error.message
+          'There has been a problem with your fetch operation: ' + error.message
         );
       });
   }
@@ -226,15 +225,14 @@ class Skill extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classNames("content", classes.root)}>
+      <div className={classNames('content', classes.root)}>
         <Typography className="headerLine">Skills</Typography>
         <Grid item xs={12} md={8} className="contentLine">
-
-          {this.state.chartConfig ? 
-            <ReactHighcharts config={this.state.chartConfig} ref="chart"/> : 
+          {this.state.chartConfig ? (
+            <ReactHighcharts config={this.state.chartConfig} ref="chart" />
+          ) : (
             <img src="images/preloader.gif" />
-          }
-
+          )}
         </Grid>
       </div>
     );

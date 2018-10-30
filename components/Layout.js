@@ -1,19 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 
-import Header from "./Header";
-import Body from "./Body";
+import Header from './Header';
+import Body from './Body';
 
 const styles = {
   root: {
     flexGrow: 1,
-    widht: "100%",
+    widht: '100%',
     minHeigth: 700,
     zIndex: 1,
-    overflow: "hidden",
-    position: "relative",
-    display: "flex"
+    overflow: 'hidden',
+    position: 'relative',
+    display: 'flex'
   }
 };
 

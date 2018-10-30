@@ -1,65 +1,65 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "material-ui/styles";
-import ButtonBase from "material-ui/ButtonBase";
-import Typography from "material-ui/Typography";
-import Grid from "material-ui/Grid";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import ButtonBase from '@material-ui/core/ButtonBase';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
   root: {
-    position: "relative",
+    position: 'relative',
     minHeight: 350,
-    height: "100vh",
-    backgroundImage: "url(images/banner_bg.jpeg)",
-    backgroundAttachment: "fixed",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    "&:hover": {
+    height: '100vh',
+    backgroundImage: 'url(images/banner_bg.jpeg)',
+    backgroundAttachment: 'fixed',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    '&:hover': {
       zIndex: 1
     },
-    "&:hover $backdrop": {
+    '&:hover $backdrop': {
       opacity: 0.22
-    },   
-    "&:hover $myName": {
+    },
+    '&:hover $myName': {
       opacity: 1,
       zIndex: 3
     },
-    "&:hover $myDesc": {
+    '&:hover $myDesc': {
       opacity: 1,
       zIndex: 3
     }
   },
   backdrop: {
-    position: "absolute",
-	zIndex: 2,
+    position: 'absolute',
+    zIndex: 2,
     left: 0,
     right: 0,
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
     opacity: 0.4,
-    transition: theme.transitions.create("opacity")
+    transition: theme.transitions.create('opacity')
   },
   content: {
-    width: "100%",
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center"
-  },  
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
   myName: {
-    position: "relative",
+    position: 'relative',
     padding: `${theme.spacing.unit * 2}px`,
     color: theme.palette.common.white,
-    transition: theme.transitions.create("border"),
-	zIndex: 3,
-    "&:hover": {
-      opacity: 1,      
-      border: "4px solid currentColor"
+    transition: theme.transitions.create('border'),
+    zIndex: 3,
+    '&:hover': {
+      opacity: 1,
+      border: '4px solid currentColor'
     },
-    "&:hover $nameMarked": {
+    '&:hover $nameMarked': {
       opacity: 0
     }
   },
@@ -68,21 +68,20 @@ const styles = theme => ({
     width: 200,
     backgroundColor: theme.palette.common.white,
     position: 'absolute',
-	zIndex: 3,
+    zIndex: 3,
     bottom: -2,
     left: 'calc(50% - 100px)',
-    transition: theme.transitions.create('opacity'),
+    transition: theme.transitions.create('opacity')
   },
   myDesc: {
-    position: "relative",
+    position: 'relative',
     padding: `${theme.spacing.unit * 2}px`,
     color: theme.palette.common.white,
-	zIndex: 3
+    zIndex: 3
   }
 });
 
 class Banner extends React.Component {
-  
   getElementOffset(element) {
     let top = 0,
       left = 0;
@@ -108,9 +107,9 @@ class Banner extends React.Component {
       var step = Math.min(1, (new Date().getTime() - start) / time);
 
       if (prop) {
-        parentElm["scrollTop"] = from + step * (to - from);
+        parentElm['scrollTop'] = from + step * (to - from);
       } else {
-        parentElm.style["scrollTop"] = from + step * (to - from);
+        parentElm.style['scrollTop'] = from + step * (to - from);
       }
       if (step === 1) {
         clearInterval(timer);
@@ -118,9 +117,9 @@ class Banner extends React.Component {
     }, 25);
 
     if (prop) {
-      parentElm["scrollTop"] = from;
+      parentElm['scrollTop'] = from;
     } else {
-      parentElm.style["scrollTop"] = from;
+      parentElm.style['scrollTop'] = from;
     }
   }
 
@@ -137,10 +136,10 @@ class Banner extends React.Component {
   onClickNav(e) {
     e.preventDefault();
 
-    var targetId = e.target.getAttribute("href");
+    var targetId = e.target.getAttribute('href');
 
     if (!targetId) {
-      targetId = this.findParentWithAttr(e.target, "href");
+      targetId = this.findParentWithAttr(e.target, 'href');
     }
 
     if (targetId) {
@@ -153,7 +152,7 @@ class Banner extends React.Component {
         true
       );
     }
-  };
+  }
 
   render() {
     const { classes, theme } = this.props;
@@ -162,8 +161,11 @@ class Banner extends React.Component {
       <div className={classes.root}>
         <div className={classes.backdrop} />
         <Grid className={classes.content}>
-          
-        <ButtonBase focusRipple href="#intro" onClick={this.onClickNav.bind(this)}>
+          <ButtonBase
+            focusRipple
+            href="#intro"
+            onClick={this.onClickNav.bind(this)}
+          >
             <Typography
               component="span"
               variant="display2"
@@ -180,7 +182,8 @@ class Banner extends React.Component {
             align="center"
             className={classes.myDesc}
           >
-            A Lifelong learning developer<br />
+            A Lifelong learning developer
+            <br />
             who is skilled, enthusiastic and innovative.
           </Typography>
         </Grid>
