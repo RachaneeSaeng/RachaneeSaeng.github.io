@@ -27,10 +27,10 @@ class Intro extends React.Component {
             align="left"
             className={classes.paragraph}
           >
-            I believe that coding is a skill which can change the world, it is
-            empowering and fulfilling. The thing I love about coding is that it
-            combines creativity and logic, I really enjoy turning complex
-            requirements into system design and turn it into programming logic.
+            I believe coding is a skill that can change the world. It is
+            empowering and fulfilling. I love coding because it combines
+            creativity and logic. I really enjoy turning complex requirements
+            into system design and put it into programming logic.
           </Typography>
           <Typography
             variant="subheading"
@@ -42,8 +42,8 @@ class Intro extends React.Component {
             and technologies make me likes a soldier with a full set of weapons
             who can choose the right tool for the right problem. There are many
             methodologies and technologies I want to build up my skill right now
-            i.e. Machine Learning, Blockchain, Functional Programming and
-            Golang.
+            i.e. Functional Programming, Golang, Machine Learning and
+            Blockchain.
           </Typography>
         </Grid>
       </div>
