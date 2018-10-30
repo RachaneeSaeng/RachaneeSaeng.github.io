@@ -57,32 +57,56 @@ class Experience extends React.Component {
         <Grid item xs={12} sm={8} lg={6} className="contentLine">
           <div className={classes.content}>
             <Typography variant="headline" className={classes.majorContent}>
+              Stealth Mode Startup
+            </Typography>
+            <Typography variant="subheading" className={classes.majorContent}>
+              Co-Founder and Information Technologies:{' '}
+              <em>July 2018 - September 2018</em>
+            </Typography>
+            <Typography variant="subheading" className={classes.minorContent}>
+              <ul>
+                <li>Researched markets and competitors.</li>
+                <li>
+                  Designed products and considered suitable technologies e.g.
+                  AWS, Ionic, NodeJs, GraphQL, and PostgreSQL.
+                </li>
+                <li>
+                  Developed products, then demonstrated and assisted pilot
+                  customers to try them.{' '}
+                </li>
+                <li>Was a project manager.</li>
+              </ul>
+            </Typography>
+          </div>
+          <div className={classes.content}>
+            <Typography variant="headline" className={classes.majorContent}>
               Agoda.com
             </Typography>
             <Typography variant="subheading" className={classes.majorContent}>
-              IT Finance Development: <em>April 2016 - Present</em>
+              IT Finance Development: <em>April 2016 - June 2018</em>
             </Typography>
             <Typography variant="subheading" className={classes.minorContent}>
               <ul>
                 <li>
-                  Develop and enhance applications to work on financial payment
-                  and reconciliation systems. These systems are the backbone of
-                  our company, ensuring that hotels get paid on time for each
-                  customer bookings.
+                  Developed and enhanced applications to work on financial
+                  payment and reconciliation systems. These systems are the
+                  backbone of our company, ensuring that hotels get paid on time
+                  for each customer bookings.
                 </li>
                 <li>
                   The applications are developed by various technologies e.g.
-                  React, RabbitMq, Hangfire, .Net Core, WCF, .Net Web API,
-                  Windows Service etc.
+                  React, RabbitMQ, Hangfire, .Net Core, WCF, and Windows
+                  service.
                 </li>
                 <li>
-                  We use many cutting-edge technologies and tools in development
-                  process e.g. Git, TeamCity, Puppet, Jira, Grafana, Kibana etc.
+                  We used many cutting-edge technologies and tools in
+                  development process e.g. Git, TeamCity, Puppet, Jira, Grafana,
+                  and Kibana.
                 </li>
                 <li>
-                  Be a scrum master to coordinate among team member to ensure
-                  that all the roadblocks are cleared in order to complete the
-                  sprint as planned.
+                  Was a scrum master who communicated with team members to
+                  ensure that all the roadblocks are cleared in order to
+                  complete the sprint as planned.
                 </li>
               </ul>
             </Typography>
@@ -97,20 +121,21 @@ class Experience extends React.Component {
             <Typography variant="subheading" className={classes.minorContent}>
               <ul>
                 <li>
-                  Capture user requirements and analyze business conditions to
+                  Captured user requirements and analyzed business conditions to
                   design architecture and programming logic.
                 </li>
                 <li>
-                  Develop, integrate, teste and implement related application
-                  components including front-end, back-end, and database.
+                  Developed, integrated, tested and implemented related
+                  application components including front-end, back-end, and
+                  database.
                 </li>
                 <li>
                   The applications are developed by various technologies e.g. C#
                   .Net, Salesforce.com, PL/SQL script, Ruby on Rails etc.
                 </li>
                 <li>
-                  Provide system documents i.e. system requirement, design, test
-                  plan and user guide.
+                  Provided system documents including system requirement,
+                  design, test plan and user guide.
                 </li>
               </ul>
             </Typography>

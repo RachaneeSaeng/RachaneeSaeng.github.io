@@ -1,7 +1,6 @@
 var mainCacheName = 'RachaneeProfile_AppShell_v3';
 var mainFiles = [
   '/',
-  '/index.html',
   '/dist/b257fa9c5ac8c515ac4d77a667ce2943.svg',
   '/dist/e34aafbb485a96eaf2a789b2bf3af6fe.gif',
   '/dist/e3f799c6dec9af194c86decdf7392405.png',
