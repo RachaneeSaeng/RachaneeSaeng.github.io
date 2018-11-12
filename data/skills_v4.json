@@ -168,7 +168,7 @@
     {
       "name": "SalesForce.com",
       "x": 25,
-      "y": 67,
+      "y": 62,
       "marker": {
         "symbol": "url(images/backend/salesForce.png)",
         "width": 69,
@@ -211,7 +211,7 @@
     },
     {
       "name": "Ruby on Rails",
-      "x": 32,
+      "x": 28,
       "y": 30,
       "marker": {
         "symbol": "url(images/backend/ruby.png)",
@@ -255,10 +255,10 @@
     },
     {
       "name": "GraphQL",
-      "x": 63,
-      "y": 51,
+      "x": 27,
+      "y": 46,
       "marker": {
-        "symbol": "url(images/methodology/graphql.png)",
+        "symbol": "url(images/backend/graphql.png)",
         "width": 47,
         "height": 47
       },
@@ -349,6 +349,17 @@
         "symbol": "url(images/methodology/machinelearning.png)",
         "width": 45,
         "height": 45
+      },
+      "isShow": true
+    },
+    {
+      "name": "Design Pattern",
+      "x": 63,
+      "y": 55,
+      "marker": {
+        "symbol": "url(images/methodology/designPattern.jpg)",
+        "width": 56,
+        "height": 42
       },
       "isShow": true
     },

@@ -1,4 +1,4 @@
-var mainCacheName = 'RachaneeProfile_AppShell_v3';
+var mainCacheName = 'RachaneeProfile_AppShell_v4';
 var mainFiles = [
   '/',
   '/dist/b257fa9c5ac8c515ac4d77a667ce2943.svg',
@@ -9,7 +9,7 @@ var mainFiles = [
   '/dist/main.js',
   '/dist/main.js.map',
   '/data/ports.json',
-  '/data/skills_v3.json',
+  '/data/skills_v4.json',
   '/images/banner_bg.jpeg',
   '/images/exp_bg.jpeg',
   '/images/favicon.png',

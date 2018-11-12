@@ -81,18 +81,20 @@ class Skill extends React.Component {
     if (size === 'S') multiplyer = 0.5;
     else if (size === 'M') multiplyer = 0.7;
 
-    return data.filter(d => d.isShow).map(function(d) {
-      return {
-        name: d.name,
-        x: d.x,
-        y: d.y,
-        marker: {
-          symbol: d.marker.symbol,
-          width: d.marker.width * multiplyer,
-          height: d.marker.height * multiplyer
-        }
-      };
-    });
+    return data
+      .filter(d => d.isShow)
+      .map(function(d) {
+        return {
+          name: d.name,
+          x: d.x,
+          y: d.y,
+          marker: {
+            symbol: d.marker.symbol,
+            width: d.marker.width * multiplyer,
+            height: d.marker.height * multiplyer
+          }
+        };
+      });
   }
 
   createChartConfig(data, xLabels, yLabels) {
@@ -192,7 +194,7 @@ class Skill extends React.Component {
   }
 
   setupChart() {
-    fetch('data/skills_v3.json')
+    fetch('data/skills_v4.json')
       .then(response => {
         if (response.ok) {
           response.json().then(json => {
