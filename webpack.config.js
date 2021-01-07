@@ -1,4 +1,4 @@
-(function() {
+(function () {
   const webpack = require('webpack');
   const path = require('path');
   const HtmlWebPackPlugin = require('html-webpack-plugin');
@@ -76,7 +76,7 @@
           ]
         },
         {
-          test: /\.(png|jpg|gif|swf)$/,
+          test: /node_modules\/react-photoswipe\/lib\/.*\.(png|jpg|gif|swf)$/,
           use: [
             {
               loader: 'file-loader'

@@ -89,7 +89,7 @@ class Contact extends React.Component {
           </IconButton>
           <IconButton
             className={classes.btnOutLine}
-            href="https://medium.com/@plesaengkrajai"
+            href="https://rachanee.medium.com/"
             target="_blank"
           >
             <Icon className={'fab fa-medium-m'} />

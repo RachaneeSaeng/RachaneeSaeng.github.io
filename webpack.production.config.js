@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
   const webpack = require('webpack');
   const path = require('path');
@@ -72,7 +72,7 @@
           })
         },
         {
-          test: /\.(png|jpg|gif|swf)$/,
+          test: /node_modules\/react-photoswipe\/lib\/.*\.(png|jpg|gif|swf)$/,
           use: [
             {
               loader: 'file-loader'

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import classNames from 'classnames';
 
 const styles = {
   paragraph: {
@@ -10,6 +11,9 @@ const styles = {
     textIndent: '2em',
     paddingTop: '1em',
     paddingBottom: '1em'
+  },
+  quote: {
+    fontStyle: 'italic'
   }
 };
 
@@ -24,26 +28,30 @@ class Intro extends React.Component {
           <Typography
             variant="subheading"
             component="p"
-            align="left"
+            align="center"
             className={classes.paragraph}
           >
-            I believe coding is a skill that can change the world. It is
-            empowering and fulfilling. I love coding because it combines
-            creativity and logic. I really enjoy turning complex requirements
-            into system design and put it into programming logic.
+            I believe programming is a skill that can change the world, it is
+            empowering and fulfilling. I really enjoy turning complex requirements
+            into system design and turn it into programming logic, it feels like playing puzzles.
           </Typography>
           <Typography
             variant="subheading"
             component="p"
-            align="left"
+            align="center"
             className={classes.paragraph}
           >
             I like to learn new things to broaden my mind. Knowing many ideas
             and technologies make me likes a soldier with a full set of weapons
-            who can choose the right tool for the right problem. There are many
-            methodologies and technologies I want to build up my skill right now
-            i.e. Functional Programming, Golang, Machine Learning and
-            Blockchain.
+            who can choose the right tool for the right problem.
+          </Typography>
+          <Typography
+            variant="subheading"
+            component="p"
+            align="center"
+            className={classNames(classes.paragraph, classes.quote)}
+          >
+            “In terms of doing work and in terms of learning and evolving as a person, you just grow more when you get more people’s perspectives…” – Mark Zuckerberg
           </Typography>
         </Grid>
       </div>
