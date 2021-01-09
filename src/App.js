@@ -1,10 +1,10 @@
-import './App.css';
-import Banner from './components/Banner/Banner'
-import Intro from './components/Intro/Intro'
-import Skill from './components/Skill/Skill'
-import Experience from './components/Experience/Experience'
-import Portfolio from './components/Portfolio/Portfolio'
-import Contact from './components/Contact/Contact'
+import './App.scss';
+import Banner from './components/Banner/Banner';
+import Intro from './components/Intro/Intro';
+import Skill from './components/Skill/Skill';
+import Experience from './components/Experience/Experience';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (

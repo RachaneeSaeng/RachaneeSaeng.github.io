@@ -11,11 +11,11 @@ function Contact() {
         Get In Touch
       </Typography>
       <Grid item xs={12} sm={8} lg={6} className="contentLine">
-        <Typography variant="subheading" align="center" className="line1">
+        <Typography variant="subtitle1" align="center" className="line1">
           rachanee.saeng@gmail.com
         </Typography>
         <br />
-        <Typography variant="subheading" align="center" className="line2">
+        <Typography variant="subtitle1" align="center" className="line2">
           +669 3324 4514
         </Typography>
       </Grid>

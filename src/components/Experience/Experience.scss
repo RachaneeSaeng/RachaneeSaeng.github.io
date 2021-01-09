@@ -1,33 +1,44 @@
-// root: {
-//     position: 'relative',
-//     minHeight: 350,
-//     backgroundImage: 'url(images/exp_bg.jpeg)',
-//     backgroundAttachment: 'fixed',
-//     backgroundPosition: '65% 50%',
-//     backgroundRepeat: 'no-repeat',
-//     backgroundSize: 'cover'
-//   },
-//   backdrop: {
-//     position: 'absolute',
-//     left: 0,
-//     right: 0,
-//     top: 0,
-//     bottom: 0,
-//     background-color: theme.palette.common.black,
-//     opacity: 0.4,
-//     transition: theme.transitions.create('opacity')
-//   },
-//   majorContent: {
-//     position: 'relative',
-//     color: '#e2e2e2',
-//     z-index: 3
-//   },
-//   minorContent: {
-//     position: 'relative',
-//     color: '#e2e2e2',
-//     z-index: 3,
-//     lineHeight: '1.5em'
-//   },
-//   content: {
-//     text-align: 'left'
-//   }
+@use "../common";
+
+$text-color: #e2e2e2;
+
+.experience {
+  position: relative;
+  min-height: 350;
+
+  @include common.background(
+    '/images/exp_bg.jpeg',
+    fixed,
+    '65% 50%',
+    no-repeat,
+    cover
+  );
+
+  .backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.4;
+    @include common.transition();
+  }
+
+  .major-content {
+    position: relative;
+    color: $text-color;
+    z-index: 3;
+  }
+
+  .minor-content {
+    position: relative;
+    color: $text-color;
+    z-index: 3;
+    line-height: '1.5em';
+  }
+
+  .left {
+    text-align: left;
+  }
+}

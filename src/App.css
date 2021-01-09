@@ -1,9 +1,0 @@
-.App {
-  flex-grow: 1;
-  width: '100%';
-  min-height: 700;
-  z-index: 1;
-  overflow: 'hidden';
-  position: 'relative';
-  display: 'flex';
-}

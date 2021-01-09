@@ -39,7 +39,7 @@
     z-index: 2;
     background-color: black;
     opacity: 0.5;
-    @include common.transition(opacity common.$transition-duration);
+    @include common.transition(opacity);
   }
 
   .content {
@@ -56,7 +56,7 @@
     padding: common.$theme-spacing-unit;
     color: white;
     z-index: 3;
-    @include common.transition(border common.$transition-duration);
+    @include common.transition();
 
     &:hover {
       opacity: 1;
@@ -75,7 +75,7 @@
     z-index: 3;
     bottom: -3px;
     left: calc(50% - 100px);
-    @include common.transition(opacity common.$transition-duration);
+    @include common.transition();
   }
 
   .myDesc {

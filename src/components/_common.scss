@@ -17,9 +17,14 @@ $transition-duration: 1s;
   }
 }
 
-@mixin transition($transition...) {
-  -moz-transition: $transition;
-  -o-transition: $transition;
-  -webkit-transition: $transition;
-  transition: $transition;
+@mixin transition(
+  $property: all,
+  $duration: $transition-duration,
+  $function: linear,
+  $delay: 0s
+) {
+  -moz-transition: $property $duration $function $delay;
+  -o-transition: $property $duration $function $delay;
+  -webkit-transition: $property $duration $function $delay;
+  transition: $property $duration $function $delay;
 }

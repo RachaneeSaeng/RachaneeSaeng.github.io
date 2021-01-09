@@ -37,7 +37,7 @@ $icon-color: #1ddfb1;
     &:hover {
       border: 2.4px solid currentColor;
       opacity: 1;
-      @include common.transition(opacity common.$transition-duration);
+      @include common.transition();
     }
   }
 }

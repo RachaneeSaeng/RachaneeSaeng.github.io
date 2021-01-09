@@ -1,0 +1,49 @@
+.App {
+  flex-grow: 1;
+  width: '100%';
+  min-height: 700;
+  z-index: 1;
+  overflow: 'hidden';
+  position: 'relative';
+  display: 'flex';
+}
+
+/*======================================= Common setting ========================================== */
+$font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
+.fontStyle {
+  font-family: $font-family;
+}
+
+/*================================================================================================== */
+
+body {
+  display: block;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  .headerLine {
+    font-family: $font-family;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 2.125rem;
+    font-weight: 400;
+    line-height: 1.20588em;
+    padding-bottom: 1.25em;
+    text-align: center;
+  }
+  .contentLine {
+    margin: auto;
+  }
+}
+
+.pswp-thumbnail {
+  display: inline-block;
+  cursor: pointer;
+}
