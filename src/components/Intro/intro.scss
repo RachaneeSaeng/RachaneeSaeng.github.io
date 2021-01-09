@@ -1,9 +1,12 @@
-// paragraph: {
-//     line-height: '2em',
-//     textIndent: '2em',
-//     padding-top: '1em',
-//     padding-bottom: '1em'
-//   },
-//   quote: {
-//     fontStyle: 'italic'
-//   }
+@use "../common";
+
+.intro {
+  .paragraph {
+    line-height: 2em;
+    text-indent: 2em;
+    padding: 1em 0em;
+  }
+  .quote {
+    font-style: italic;
+  }
+}

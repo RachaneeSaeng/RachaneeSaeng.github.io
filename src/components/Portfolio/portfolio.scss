@@ -1,12 +1,18 @@
-// thumnailImg: {
-//     width: '165px',
-//     margin: '3px',
-//     [theme.breakpoints.up('sm')]: {
-//       width: '210px',
-//       margin: '7px'
-//     },
-//     [theme.breakpoints.up('md')]: {
-//       width: '260px',
-//       margin: '10px'
-//     }
-//   }
+@use "../common";
+
+.port {
+  .thumnailImg {
+    width: 165px;
+    margin: 3px;
+
+    @media (max-width: common.$breakpoint-md) {
+      width: 260px;
+      margin: 10px;
+    }
+
+    @media (max-width: common.$breakpoint-sm) {
+      width: 210px;
+      margin: 7px;
+    }
+  }
+}

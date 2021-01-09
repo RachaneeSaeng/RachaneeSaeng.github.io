@@ -6,19 +6,17 @@ function Experience() {
   return (
     <div className="experience content">
       <div className="backdrop" />
-      <Typography variant="h5" className="major-content">
-        Experience
-      </Typography>
+      <Typography className="headerLine majorContent">Experience</Typography>
       <Grid item xs={12} sm={8} lg={6} className="contentLine">
         <div className="left">
-          <Typography variant="h6" className="major-content">
+          <Typography variant="h6" className="majorContent">
             Stealth Mode Startup
           </Typography>
-          <Typography variant="subtitle1" className="major-content">
+          <Typography variant="subtitle1" className="majorContent">
             Co-Founder and Information Technologies:{' '}
             <em>July 2018 - September 2018</em>
           </Typography>
-          <Typography variant="subtitle1" className="major-content">
+          <Typography variant="subtitle1" className="majorContent">
             <ul>
               <li>Researched markets and competitors.</li>
               <li>
@@ -34,13 +32,13 @@ function Experience() {
           </Typography>
         </div>
         <div className="left">
-          <Typography variant="h5" className="major-content">
+          <Typography variant="h5" className="majorContent">
             Agoda.com
           </Typography>
-          <Typography variant="subtitle1" className="major-content">
+          <Typography variant="subtitle1" className="majorContent">
             IT Finance Development: <em>April 2016 - June 2018</em>
           </Typography>
-          <Typography variant="subtitle1" className="minor-content">
+          <Typography variant="subtitle1" className="minorContent">
             <ul>
               <li>
                 Developed and enhanced applications to work on financial payment
@@ -65,13 +63,13 @@ function Experience() {
           </Typography>
         </div>
         <div className="left">
-          <Typography variant="h5" className="major-content">
+          <Typography variant="h5" className="majorContent">
             Seagate Technology
           </Typography>
-          <Typography variant="subtitle1" className="major-content">
+          <Typography variant="subtitle1" className="majorContent">
             IT Factory Information Service: <em>May 2011 - March 2016</em>
           </Typography>
-          <Typography variant="subtitle1" className="minor-content">
+          <Typography variant="subtitle1" className="minorContent">
             <ul>
               <li>
                 Captured user requirements and analyzed business conditions to

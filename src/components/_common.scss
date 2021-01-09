@@ -1,5 +1,10 @@
+$breakpoint-md: 768px;
+$breakpoint-sm: 480px;
+
 $theme-spacing-unit: 2rem;
 $transition-duration: 1s;
+
+$font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 
 @mixin background(
   $imgpath,
@@ -27,4 +32,30 @@ $transition-duration: 1s;
   -o-transition: $property $duration $function $delay;
   -webkit-transition: $property $duration $function $delay;
   transition: $property $duration $function $delay;
+}
+
+.content {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  .headerLine {
+    font-family: $font-family;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 2.125rem;
+    font-weight: 400;
+    line-height: 1.20588em;
+    padding-bottom: 1.25em;
+    text-align: center;
+  }
+  .contentLine {
+    margin: auto;
+  }
+}
+
+.pswp-thumbnail {
+  display: inline-block;
+  cursor: pointer;
 }

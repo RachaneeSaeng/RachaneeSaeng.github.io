@@ -25,13 +25,13 @@ $text-color: #e2e2e2;
     @include common.transition();
   }
 
-  .major-content {
+  .majorContent {
     position: relative;
     color: $text-color;
     z-index: 3;
   }
 
-  .minor-content {
+  .minorContent {
     position: relative;
     color: $text-color;
     z-index: 3;
