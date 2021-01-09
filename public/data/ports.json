@@ -1,0 +1,78 @@
+{"data" :[
+        {
+        "thumnailUrl": "images/portfolio/AWS_s.jpg",
+        "imgUrl": "images/portfolio/AWS.jpg",
+        "imgSize": "1600x1194",
+        "description": "Amazon Web Services",
+		    "isShow": true
+      },
+      {
+        "thumnailUrl": "images/portfolio/Python_s.jpg",
+        "imgUrl": "images/portfolio/Python.jpg",
+        "imgSize": "1600x1194",
+        "description": "Python Programming",
+		    "isShow": true
+      },
+       {
+        "thumnailUrl": "images/portfolio/Go_s.jpg",
+        "imgUrl": "images/portfolio/Go.jpg",
+        "imgSize": "1600x1194",
+        "description": "Go Programming",
+		    "isShow": true
+      }, {
+        "thumnailUrl": "images/portfolio/Certificate_1s.jpg",
+        "imgUrl": "images/portfolio/Certificate_1.jpg",
+        "imgSize": "1419x1005",
+        "description": "Microsoft Certified Solutions Developer: Web Applications",
+		    "isShow": true
+      }, {
+        "thumnailUrl": "images/portfolio/Certificate_2s.jpg",
+        "imgUrl": "images/portfolio/Certificate_2.jpg",
+        "imgSize": "1419x1005",
+        "description": "Microsoft Certified Professional",
+		    "isShow": true
+      }, {
+        "thumnailUrl": "images/portfolio/Certificate_3s.jpg",
+        "imgUrl": "images/portfolio/Certificate_3.jpg",
+        "imgSize": "1419x1004",
+        "description": "Microsoft Specialist: Programming in HTML5 with JavaScript and CSS3",
+		    "isShow": true
+      }, {        
+        "thumnailUrl": "images/portfolio/pm_s.jpg",
+        "imgUrl": "images/portfolio/pm.jpg",
+        "imgSize": "1294x1000",
+        "description": "Fundamental of Project Planning and Management",
+		    "isShow": true
+      }, {
+        "thumnailUrl": "images/portfolio/assertive_s.jpg",
+        "imgUrl": "images/portfolio/assertive.jpg",
+        "imgSize": "725x1000",
+        "description": "Assertive & Persuasive Communication",
+		    "isShow": true
+      }, {
+        "thumnailUrl": "images/portfolio/prodev_s.jpg",
+        "imgUrl": "images/portfolio/prodev.jpg",
+        "imgSize": "1313x1000",
+        "description": "Professional Development Series",
+		    "isShow": true
+      }, {
+        "thumnailUrl": "images/portfolio/creativity_s.jpg",
+        "imgUrl": "images/portfolio/creativity.jpg",
+        "imgSize": "1421x1000",
+        "description": "Sharpen Your Creativity Skills",
+		    "isShow": true
+      }, {        
+        "thumnailUrl": "images/portfolio/chairman_s.jpg",
+        "imgUrl": "images/portfolio/chairman.jpg",
+        "imgSize": "720x1000",
+        "description": "Chairperson of KKU Bridge Club 2009",
+		    "isShow": true
+      }, {        
+        "thumnailUrl": "images/portfolio/jicf_s.jpg",
+        "imgUrl": "images/portfolio/jicf.jpg",
+        "imgSize": "1399x1000",
+        "description": "KKU JICF Scholarship Program",
+		    "isShow": true
+      }
+    ]
+}
