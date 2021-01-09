@@ -1,33 +1,43 @@
-// root: {
-//     backgroundColor: '#1f1f1f',
-//     textAlign: 'center',
-//     paddingTop: '1.8rem',
-//     paddingBottom: '1.8rem'
-//   },
-//   contentLine: {
-//     paddingTop: '1.2em',
-//     margin: 'auto'
-//   },
-//   line1: {
-//     paddingBottom: '1em',
-//     color: '#e2e2e2'
-//   },
-//   line2: {
-//     paddingBottom: '0.7em',
-//     color: '#e2e2e2'
-//   },
-//   btnOutLine: {
-//     border: '2.4px solid #1DDFB1',
-//     color: '#1DDFB1',
-//     fontSize: '1.5em',
-//     width: '2em',
-//     height: '2em',
-//     borderRadius: '100%',
-//     textAlign: 'bottom',
-//     opacity: 0.7,
-//     '&:hover': {
-//       border: '2.4px solid currentColor',
-//       opacity: 1,
-//       transition: theme.transitions.create('opacity')
-//     }
-//   }
+@use "../common";
+
+$text-color: #e2e2e2;
+$icon-color: #1ddfb1;
+
+.contact {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+
+  .contentLine {
+    padding-top: 1.2em;
+    margin: auto;
+
+    .line1 {
+      line-height: 2em;
+      color: $text-color;
+    }
+
+    .line2 {
+      padding-bottom: 1em;
+      color: $text-color;
+    }
+  }
+
+  .btnOutLine {
+    border: 2.4px solid $icon-color;
+    color: $icon-color;
+    font-size: 1.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    text-align: bottom;
+    opacity: 0.7;
+
+    &:hover {
+      border: 2.4px solid currentColor;
+      opacity: 1;
+      @include common.transition(opacity common.$transition-duration);
+    }
+  }
+}

@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 function Banner() {
-
   function getElementOffset(element) {
     let top = 0,
       left = 0;
@@ -78,14 +77,10 @@ function Banner() {
   }
 
   return (
-    <div className="root">
+    <div className="banner">
       <div className="backdrop" />
       <Grid className="content">
-        <ButtonBase
-          focusRipple
-          href="#intro"
-          onClick={onClickNav}
-        >
+        <ButtonBase focusRipple href="#intro" onClick={onClickNav}>
           <Typography
             component="span"
             variant="h3"
@@ -93,19 +88,15 @@ function Banner() {
             className="myName"
           >
             Rachanee Saengkrajai
-              <span className="nameMarked" />
+            <span className="nameMarked" />
           </Typography>
         </ButtonBase>
 
-        <Typography
-          variant="subtitle1"
-          align="center"
-          className="myDesc"
-        >
+        <Typography variant="subtitle1" align="center" className="myDesc">
           A Lifelong learning developer
-            <br />
-            who is skilled, enthusiastic and innovative.
-          </Typography>
+          <br />
+          who is skilled, enthusiastic and innovative.
+        </Typography>
       </Grid>
     </div>
   );

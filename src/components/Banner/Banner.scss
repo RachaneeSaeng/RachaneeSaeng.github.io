@@ -1,28 +1,33 @@
 @use "../common";
 
-.root {
-    position: relative;
-    min-height: 350;
-    height: 100vh;
-    @include common.background('/images/banner_bg.jpeg', fixed, center, no-repeat, cover);
-    
-    &:hover {
-      z-index: 1
-    }
+.banner {
+  position: relative;
+  min-height: 350;
+  height: 100vh;
+  @include common.background(
+    '/images/banner_bg.jpeg',
+    fixed,
+    center,
+    no-repeat,
+    cover
+  );
 
-    &:hover .backdrop {
-      opacity: 0.22
-    }
+  &:hover {
+    z-index: 1;
+  }
 
-    &:hover .myName {
-      opacity: 1;
-      z-index: 3;
-    }
+  &:hover .backdrop {
+    opacity: 0.22;
+  }
 
-    &:hover .myDesc {
-      opacity: 1;
-      z-index: 3
-    }
+  &:hover .myName {
+    opacity: 1;
+    z-index: 3;
+  }
+
+  &:hover .myDesc {
+    opacity: 1;
+    z-index: 3;
   }
 
   .backdrop {
@@ -31,10 +36,10 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 2;    
+    z-index: 2;
     background-color: black;
     opacity: 0.5;
-    @include common.transition(opacity 1s);
+    @include common.transition(opacity common.$transition-duration);
   }
 
   .content {
@@ -43,26 +48,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
 
   .myName {
     position: relative;
-    padding: common.$theme-spacing-unit * 1;
-    color: white;    
-    z-index: 3;     
-    @include common.transition(border 1s);
-    
+    padding: common.$theme-spacing-unit;
+    color: white;
+    z-index: 3;
+    @include common.transition(border common.$transition-duration);
+
     &:hover {
       opacity: 1;
-      border: 4px solid currentColor
+      border: 4px solid currentColor;
     }
-    &:hover .nameMarked{
-      opacity: 0
+    &:hover .nameMarked {
+      opacity: 0;
     }
   }
 
- .nameMarked {
+  .nameMarked {
     height: 3px;
     width: 200px;
     background-color: white;
@@ -70,7 +75,7 @@
     z-index: 3;
     bottom: -3px;
     left: calc(50% - 100px);
-    @include common.transition(opacity 1s);
+    @include common.transition(opacity common.$transition-duration);
   }
 
   .myDesc {
@@ -79,3 +84,4 @@
     color: white;
     z-index: 3;
   }
+}

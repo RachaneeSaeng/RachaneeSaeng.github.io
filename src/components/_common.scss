@@ -1,18 +1,25 @@
 $theme-spacing-unit: 2rem;
+$transition-duration: 1s;
 
-@mixin background($imgpath, $attachment: fixed, $position:0 0, $repeat: no-repeat, $size: auto) {
+@mixin background(
+  $imgpath,
+  $attachment: fixed,
+  $position: 0,
+  $repeat: no-repeat,
+  $size: auto
+) {
   background: {
-      image: url($imgpath);
-      attachment:  $attachment;
-      position: $position;
-      repeat: $repeat;
-      size: $size
+    image: url($imgpath);
+    attachment: $attachment;
+    position: $position;
+    repeat: $repeat;
+    size: $size;
   }
 }
 
 @mixin transition($transition...) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
 }
