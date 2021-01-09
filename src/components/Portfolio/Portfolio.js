@@ -1,4 +1,4 @@
-import loading from '../../images/preloader.gif';
+import preLoading from '../../images/preloader.gif';
 
 import './Portfolio.scss';
 import 'react-photoswipe/lib/photoswipe.css';
@@ -58,7 +58,7 @@ function Portfolio() {
             thumbnailContent={(item) => getThumbnailContent(item)}
           />
         ) : (
-          <img src={loading} />
+          <img src={preLoading} />
         )}
       </Grid>
     </div>
