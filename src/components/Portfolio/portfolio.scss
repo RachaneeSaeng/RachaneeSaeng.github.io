@@ -1,18 +1,18 @@
 @use "../common";
 
 .port {
-  .thumnailImg {
+  .thumbnail {
     width: 165px;
     margin: 3px;
 
-    @media (max-width: common.$breakpoint-md) {
-      width: 260px;
-      margin: 10px;
-    }
-
-    @media (max-width: common.$breakpoint-sm) {
+    @media (min-width: common.$breakpoint-sm) {
       width: 210px;
       margin: 7px;
+    }
+
+    @media (min-width: common.$breakpoint-md) {
+      width: 260px;
+      margin: 10px;
     }
   }
 }

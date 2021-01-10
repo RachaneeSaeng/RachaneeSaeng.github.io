@@ -6,7 +6,7 @@ function Experience() {
   return (
     <div className="experience content">
       <div className="backdrop" />
-      <Typography className="headerLine majorContent">Experience</Typography>
+      <Typography className="majorContent headerLine">Experience</Typography>
       <Grid item xs={12} sm={8} lg={6} className="contentLine">
         <div className="left">
           <Typography variant="h6" className="majorContent">

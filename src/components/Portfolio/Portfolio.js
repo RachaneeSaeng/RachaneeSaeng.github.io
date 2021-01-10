@@ -11,7 +11,11 @@ import { PhotoSwipeGallery } from 'react-photoswipe';
 function Portfolio() {
   const [photos, setPhotos] = useState([]);
 
+  getGalleryData();
+
   function getGalleryData() {
+    if (photos.length > 0) return;
+
     fetch('data/ports.json')
       .then((response) => {
         if (response.ok) {
@@ -31,7 +35,7 @@ function Portfolio() {
                 };
               });
 
-            this.setState({ photos: realData });
+            setPhotos(realData);
           });
         } else {
           console.log(response);
@@ -45,7 +49,7 @@ function Portfolio() {
   }
 
   function getThumbnailContent(item) {
-    return <img src={item.thumbnail} className="thumnailImg" />;
+    return <img src={item.thumbnail} className="thumbnail" />;
   }
 
   return (
