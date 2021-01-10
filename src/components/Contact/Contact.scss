@@ -7,19 +7,19 @@ $icon-color: #1ddfb1;
   background-color: #1f1f1f;
   text-align: center;
   padding-top: 1.8rem;
-  padding-bottom: 1.8rem;
+  padding-bottom: 2rem;
 
   .contentLine {
     padding-top: 1.2em;
     margin: auto;
 
     .line1 {
-      line-height: 2em;
+      padding-bottom: 0.3rem;
       color: $text-color;
     }
 
     .line2 {
-      padding-bottom: 1em;
+      padding-bottom: 0.7rem;
       color: $text-color;
     }
   }

@@ -14,7 +14,6 @@ function Contact() {
         <Typography variant="subtitle1" align="center" className="line1">
           rachanee.saeng@gmail.com
         </Typography>
-        <br />
         <Typography variant="subtitle1" align="center" className="line2">
           +669 3324 4514
         </Typography>

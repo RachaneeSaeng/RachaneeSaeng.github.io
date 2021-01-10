@@ -16,8 +16,8 @@ function Skill() {
     0: ' ',
     12.5: 'Front-End',
     37.5: 'Back-End',
-    62.5: 'Methodology',
-    87.5: 'Tools',
+    62.5: 'Infrastructure',
+    87.5: 'Soft Skills',
   };
 
   const yAxisLabels = {
@@ -44,8 +44,8 @@ function Skill() {
 
   function getSize() {
     var pageSize = window.innerWidth;
-    if (pageSize < 600) return 'S';
-    if (pageSize < 960) return 'M';
+    if (pageSize < 640) return 'S';
+    if (pageSize < 1280) return 'M';
     return 'L';
   }
 

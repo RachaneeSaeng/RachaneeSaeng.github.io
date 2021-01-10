@@ -79,11 +79,11 @@ function Banner() {
   return (
     <div className="banner">
       <div className="backdrop" />
-      <Grid className="content">
+      <Grid className="myInfo">
         <ButtonBase focusRipple href="#intro" onClick={onClickNav}>
           <Typography
             component="span"
-            variant="h3"
+            variant="h2"
             align="center"
             className="myName"
           >
@@ -92,7 +92,7 @@ function Banner() {
           </Typography>
         </ButtonBase>
 
-        <Typography variant="subtitle1" align="center" className="myDesc">
+        <Typography variant="h5" align="center" className="myDesc">
           A Lifelong learning developer
           <br />
           who is skilled, enthusiastic and innovative.

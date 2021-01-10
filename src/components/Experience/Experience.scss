@@ -27,7 +27,7 @@ $text-color: #e2e2e2;
 
   .majorContent {
     position: relative;
-    color: $text-color;
+    color: $text-color !important;
     z-index: 3;
   }
 
