@@ -3,7 +3,7 @@ import preLoading from '../../images/preloader.gif';
 import './Portfolio.scss';
 import 'react-photoswipe/lib/photoswipe.css';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { PhotoSwipeGallery } from 'react-photoswipe';
@@ -11,45 +11,38 @@ import { PhotoSwipeGallery } from 'react-photoswipe';
 function Portfolio() {
   const [photos, setPhotos] = useState([]);
 
-  getGalleryData();
+  useEffect(() => {
+    getGalleryData();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  function getGalleryData() {
-    if (photos.length > 0) return;
+  async function getGalleryData() {
+    var response = await fetch('data/ports.json');
+    if (response && response.ok) {
+      var json = await response.json();
+      var data = json.data;
+      var realData = data
+        .filter((d) => d.isShow)
+        .map(function (d) {
+          var size = d.imgSize.split('x');
+          return {
+            src: d.imgUrl,
+            thumbnail: d.thumnailUrl,
+            w: size[0],
+            h: size[1],
+            title: d.description,
+          };
+        });
 
-    fetch('data/ports.json')
-      .then((response) => {
-        if (response.ok) {
-          response.json().then((json) => {
-            var data = json.data;
-
-            var realData = data
-              .filter((d) => d.isShow)
-              .map(function (d) {
-                var size = d.imgSize.split('x');
-                return {
-                  src: d.imgUrl,
-                  thumbnail: d.thumnailUrl,
-                  w: size[0],
-                  h: size[1],
-                  title: d.description,
-                };
-              });
-
-            setPhotos(realData);
-          });
-        } else {
-          console.log(response);
-        }
-      })
-      .catch((error) => {
-        console.log(
-          'There has been a problem with your fetch operation: ' + error.message
-        );
-      });
+      setPhotos(realData);
+    } else {
+      console.log(response);
+    }
   }
 
   function getThumbnailContent(item) {
-    return <img src={item.thumbnail} className="thumbnail" />;
+    return (
+      <img src={item.thumbnail} alt={item.description} className="thumbnail" />
+    );
   }
 
   return (
@@ -62,7 +55,7 @@ function Portfolio() {
             thumbnailContent={(item) => getThumbnailContent(item)}
           />
         ) : (
-          <img src={preLoading} />
+          <img src={preLoading} alt="loaging..." />
         )}
       </Grid>
     </div>
