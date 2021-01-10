@@ -55,7 +55,7 @@
 
   .myName {
     position: relative;
-    margin-top: -3rem;
+    margin-top: -10rem;
     padding: common.$theme-spacing-unit common.$theme-spacing-unit * 2;
     color: white;
     z-index: 3;
@@ -72,12 +72,12 @@
 
   .nameMarked {
     height: 3px;
-    width: 200px;
+    width: 30rem;
     background-color: white;
     position: absolute;
     z-index: 3;
     bottom: -3px;
-    left: calc(50% - 100px);
+    left: calc(50% - 15rem);
     @include common.transition();
   }
 

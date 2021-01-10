@@ -83,7 +83,7 @@ function Banner() {
         <ButtonBase focusRipple href="#intro" onClick={onClickNav}>
           <Typography
             component="span"
-            variant="h2"
+            variant="h1"
             align="center"
             className="myName"
           >
@@ -92,10 +92,11 @@ function Banner() {
           </Typography>
         </ButtonBase>
 
-        <Typography variant="h5" align="center" className="myDesc">
-          A Lifelong learning developer
+        <Typography variant="h6" align="center" className="myDesc">
+          An enthusiastic and innovative software engineer
           <br />
-          who is skilled, enthusiastic and innovative.
+          with ten years of experience, Microsoft certificates and leadership
+          skills.
         </Typography>
       </Grid>
     </div>

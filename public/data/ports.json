@@ -1,5 +1,19 @@
 {"data" :[
-        {
+      {
+        "thumnailUrl": "images/portfolio/azure_associate_s.jpg",
+        "imgUrl": "images/portfolio/azure_associate.png",
+        "imgSize": "600x600",
+        "description": "Azure Developer Associate",
+        "isShow": true
+      },
+      {
+        "thumnailUrl": "images/portfolio/azure_fundamentals_s.jpg",
+        "imgUrl": "images/portfolio/azure_fundamentals.png",
+        "imgSize": "600x600",
+        "description": "Azure Fundamental",
+        "isShow": true
+      },
+      {
         "thumnailUrl": "images/portfolio/AWS_s.jpg",
         "imgUrl": "images/portfolio/AWS.jpg",
         "imgSize": "1600x1194",
@@ -55,23 +69,11 @@
         "imgSize": "1313x1000",
         "description": "Professional Development Series",
 		    "isShow": true
-      }, {
-        "thumnailUrl": "images/portfolio/creativity_s.jpg",
-        "imgUrl": "images/portfolio/creativity.jpg",
-        "imgSize": "1421x1000",
-        "description": "Sharpen Your Creativity Skills",
-		    "isShow": true
-      }, {        
+      }, {          
         "thumnailUrl": "images/portfolio/chairman_s.jpg",
         "imgUrl": "images/portfolio/chairman.jpg",
         "imgSize": "720x1000",
         "description": "Chairperson of KKU Bridge Club 2009",
-		    "isShow": true
-      }, {        
-        "thumnailUrl": "images/portfolio/jicf_s.jpg",
-        "imgUrl": "images/portfolio/jicf.jpg",
-        "imgSize": "1399x1000",
-        "description": "KKU JICF Scholarship Program",
 		    "isShow": true
       }
     ]

@@ -3,11 +3,16 @@
 .intro {
   background-color: #f9f8f8;
   .paragraph {
+    text-align: left;
     line-height: 2em;
     text-indent: 2em;
-    padding: 1em 0em;
+    padding: 0.5rem 0em;
   }
   .quote {
+    text-align: center;
+    line-height: 2em;
+    text-indent: 2em;
+    padding: 1rem 0em;
     font-style: italic;
   }
 }

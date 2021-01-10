@@ -7,33 +7,18 @@ function Intro() {
     <div className="intro content">
       <Typography className="headerLine">Introduction</Typography>
       <Grid item xs={12} sm={8} lg={6} className="contentLine">
-        <Typography
-          variant="subtitle1"
-          component="p"
-          align="center"
-          className="paragraph"
-        >
-          I believe programming is a skill that can change the world, it is
-          empowering and fulfilling. I really enjoy turning complex requirements
-          into system design and turn it into programming logic, it feels like
-          playing puzzles.
+        <Typography component="p" align="center" className="paragraph">
+          Programming is a skill that can change the world. It is empowering and
+          fulfilling. In order to do that, imagination, creativity, and thinking
+          outside the box are needed.
         </Typography>
-        <Typography
-          variant="subtitle1"
-          component="p"
-          align="center"
-          className="paragraph"
-        >
-          I like to learn new things to broaden my mind. Knowing many ideas and
-          technologies make me likes a soldier with a full set of weapons who
-          can choose the right tool for the right problem.
+        <Typography component="p" align="center" className="paragraph">
+          For me, each day leads to opportunities; chances to learn something
+          new. Knowing many ideas and technologies is likes a soldier with a
+          full set of weapons who can choose the right tool to build
+          great things.
         </Typography>
-        <Typography
-          variant="subtitle1"
-          component="p"
-          align="center"
-          className="paragraph quote"
-        >
+        <Typography component="p" align="center" className="quote">
           “In terms of doing work and in terms of learning and evolving as a
           person, you just grow more when you get more people’s perspectives…” –
           Mark Zuckerberg

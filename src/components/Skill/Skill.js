@@ -16,8 +16,8 @@ function Skill() {
     0: ' ',
     12.5: 'Front-End',
     37.5: 'Back-End',
-    62.5: 'Infrastructure',
-    87.5: 'Soft Skills',
+    62.5: 'Infratstructure',
+    87.5: 'Tools',
   };
 
   const yAxisLabels = {
@@ -59,8 +59,9 @@ function Skill() {
 
   function genDataToPlot(data, size) {
     var multiplyer = 1;
-    if (size === 'S') multiplyer = 0.5;
-    else if (size === 'M') multiplyer = 0.7;
+    if (size === 'S') multiplyer = 0.4;
+    else if (size === 'M') multiplyer = 0.6;
+    else if (size === 'L') multiplyer = 0.8;
 
     return data
       .filter((d) => d.isShow)
