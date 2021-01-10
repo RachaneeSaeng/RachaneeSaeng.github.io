@@ -1,12 +1,12 @@
 import preLoading from '../../images/preloader.gif';
 
 import './Portfolio.scss';
-import 'react-photoswipe/lib/photoswipe.css';
+import 'react-photoswipe-2/lib/photoswipe.css';
 
 import React, { useState, useEffect } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { PhotoSwipeGallery } from 'react-photoswipe';
+import { PhotoSwipeGallery } from 'react-photoswipe-2';
 
 function Portfolio() {
   const [photos, setPhotos] = useState([]);
