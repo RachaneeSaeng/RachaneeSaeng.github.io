@@ -1,6 +1,7 @@
 function generatePrecacheItems() {
   // precache port big images for PWA
   return [
+    { revision: null, url: 'favicon2.png' },
     { revision: null, url: 'images/portfolio/azure_associate.png' },
     { revision: null, url: 'images/portfolio/azure_fundamentals.png' },
     { revision: null, url: 'images/portfolio/AWS.jpg' },
