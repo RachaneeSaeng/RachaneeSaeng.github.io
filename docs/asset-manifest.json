@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.600afe20.chunk.css",
-    "main.js": "/static/js/main.a543a189.chunk.js",
-    "main.js.map": "/static/js/main.a543a189.chunk.js.map",
+    "main.css": "/static/css/main.01f5a49a.chunk.css",
+    "main.js": "/static/js/main.663e3437.chunk.js",
+    "main.js.map": "/static/js/main.663e3437.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.dccd1072.js",
     "runtime-main.js.map": "/static/js/runtime-main.dccd1072.js.map",
     "static/css/2.9ae0135d.chunk.css": "/static/css/2.9ae0135d.chunk.css",
@@ -14,7 +14,7 @@
     "service-worker.js": "/service-worker.js",
     "service-worker.js.map": "/service-worker.js.map",
     "static/css/2.9ae0135d.chunk.css.map": "/static/css/2.9ae0135d.chunk.css.map",
-    "static/css/main.600afe20.chunk.css.map": "/static/css/main.600afe20.chunk.css.map",
+    "static/css/main.01f5a49a.chunk.css.map": "/static/css/main.01f5a49a.chunk.css.map",
     "static/js/2.16cdec83.chunk.js.LICENSE.txt": "/static/js/2.16cdec83.chunk.js.LICENSE.txt",
     "static/media/Banner.scss": "/static/media/banner_bg.f9b20754.jpeg",
     "static/media/photoswipe.css": "/static/media/default-skin.f64c3af3.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.dccd1072.js",
     "static/css/2.9ae0135d.chunk.css",
     "static/js/2.16cdec83.chunk.js",
-    "static/css/main.600afe20.chunk.css",
-    "static/js/main.a543a189.chunk.js"
+    "static/css/main.01f5a49a.chunk.css",
+    "static/js/main.663e3437.chunk.js"
   ]
 }
