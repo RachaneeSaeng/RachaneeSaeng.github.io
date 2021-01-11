@@ -1,0 +1,433 @@
+{
+  "data": [
+    {
+      "name": "Angular",
+      "x": 5,
+      "y": 70,
+      "marker": {
+        "symbol": "url(images/frontend/angular.png)",
+        "width": 40,
+        "height": 44
+      },
+      "isShow": true
+    },
+    {
+      "name": "Cypress",
+      "x": 3,
+      "y": 55,
+      "marker": {
+        "symbol": "url(images/frontend/cypress.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },
+    {
+      "name": "Selenium",
+      "x": 20,
+      "y": 40,
+      "marker": {
+        "symbol": "url(images/frontend/selenium.png)",
+        "width": 38,
+        "height": 34
+      },
+      "isShow": true
+    },
+    {
+      "name": "TypeScript",
+      "x": 11,
+      "y": 60,
+      "marker": {
+        "symbol": "url(images/frontend/typeScript.png)",
+        "width": 40,
+        "height": 40
+      },
+      "isShow": true
+    },
+    {
+      "name": "React",
+      "x": 18,
+      "y": 65,
+      "marker": {
+        "symbol": "url(images/frontend/react.png)",
+        "width": 45,
+        "height": 40
+      },
+      "isShow": true
+    },
+    {
+      "name": "Progressive Web App",
+      "x": 17,
+      "y": 54,
+      "marker": {
+        "symbol": "url(images/frontend/pwa.png)",
+        "width": 38,
+        "height": 14
+      },
+      "isShow": true
+    },
+    {
+      "name": "Saas",
+      "x": 9,
+      "y": 47,
+      "marker": {
+        "symbol": "url(images/frontend/sass.png)",
+        "width": 38,
+        "height": 29
+      },
+      "isShow": true
+    },
+    {
+      "name": "Webpack",
+      "x": 14,
+      "y": 43,
+      "marker": {
+        "symbol": "url(images/frontend/webpack.png)",
+        "width": 40,
+        "height": 42
+      },
+      "isShow": true
+    },
+    {
+      "name": "Less",
+      "x": 4,
+      "y": 37,
+      "marker": {
+        "symbol": "url(images/frontend/less.jpg)",
+        "width": 52,
+        "height": 25
+      },
+      "isShow": true
+    },    
+    {
+      "name": "C# .Net/.Net Core",
+      "x": 36,
+      "y": 80,
+      "marker": {
+        "symbol": "url(images/backend/cSharp.png)",
+        "width": 43,
+        "height": 41
+      },
+      "isShow": true
+    },
+    {
+      "name": "Go",
+      "x": 39,
+      "y": 30,
+      "marker": {
+        "symbol": "url(images/backend/go.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },    
+    {
+      "name": "Salesforce",
+      "x": 25,
+      "y": 55,
+      "marker": {
+        "symbol": "url(images/backend/salesForce.png)",
+        "width": 69,
+        "height": 43
+      },
+      "isShow": true
+    },
+    {
+      "name": "Ruby on Rails",
+      "x": 38,
+      "y": 14,
+      "marker": {
+        "symbol": "url(images/backend/ruby.png)",
+        "width": 40,
+        "height": 39
+      },
+      "isShow": true
+    },
+    {
+      "name": "Python",
+      "x": 30,
+      "y": 23,
+      "marker": {
+        "symbol": "url(images/backend/python.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },    
+    {
+      "name": "NodeJS",
+      "x": 42,
+      "y": 62,
+      "marker": {
+        "symbol": "url(images/backend/node.png)",
+        "width": 56,
+        "height": 32
+      },
+      "isShow": true
+    },
+    {
+      "name": "GraphQL",
+      "x": 32,
+      "y": 65,
+      "marker": {
+        "symbol": "url(images/backend/graphql.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },
+    {
+      "name": "SpecFlow",
+      "x": 43,
+      "y": 47,
+      "marker": {
+        "symbol": "url(images/backend/specflow.png)",
+        "width": 66,
+        "height": 35
+      },
+      "isShow": true
+    },
+    {
+      "name": "gRPC",
+      "x": 34,
+      "y": 45,
+      "marker": {
+        "symbol": "url(images/backend/grpc.png)",
+        "width": 45,
+        "height": 20
+      },
+      "isShow": true
+    },
+    {
+      "name": "Docker",
+      "x": 60,
+      "y": 60,
+      "marker": {
+        "symbol": "url(images/infrastructure/docker.png)",
+        "width": 52,
+        "height": 52
+      },
+      "isShow": true
+    },
+    {
+      "name": "Kubernetes",
+      "x": 60,
+      "y": 45,
+      "marker": {
+        "symbol": "url(images/infrastructure/kubernetes.png)",
+        "width": 40,
+        "height": 40
+      },
+      "isShow": true
+    },
+    {
+      "name": "Oracle Database",
+      "x": 70,
+      "y": 47,
+      "marker": {
+        "symbol": "url(images/infrastructure/oracleDatabase.jpg)",
+        "width": 35,
+        "height": 49
+      },
+      "isShow": true
+    },
+    {
+      "name": "Redis",
+      "x": 69,
+      "y": 60,
+      "marker": {
+        "symbol": "url(images/infrastructure/redis.png)",
+        "width": 75,
+        "height": 25
+      },
+      "isShow": true
+    },
+    {
+      "name": "Azure",
+      "x": 53,
+      "y": 70,
+      "marker": {
+        "symbol": "url(images/infrastructure/azure.png)",
+        "width": 38,
+        "height": 30
+      },
+      "isShow": true
+    },
+    {
+      "name": "Azure Key Vault",
+      "x": 59,
+      "y": 75,
+      "marker": {
+        "symbol": "url(images/infrastructure/azure_keyvault.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },
+    {
+      "name": "Amazon Web Services",
+      "x": 54,
+      "y": 35,
+      "marker": {
+        "symbol": "url(images/infrastructure/aws.png)",
+        "width": 50,
+        "height": 33
+      },
+      "isShow": true
+    },
+    {
+      "name": "Microsoft Sql Server",
+      "x": 67,
+      "y": 80,
+      "marker": {
+        "symbol": "url(images/infrastructure/sqlServer.jpg)",
+        "width": 51,
+        "height": 40
+      },
+      "isShow": true
+    },    
+    {
+      "name": "PostgreSQL",
+      "x": 65,
+      "y": 30,
+      "marker": {
+        "symbol": "url(images/infrastructure/postgreSql.png)",
+        "width": 40,
+        "height": 45
+      },
+      "isShow": true
+    },
+    {
+      "name": "RabbitMQ",
+      "x": 53,
+      "y": 55,
+      "marker": {
+        "symbol": "url(images/infrastructure/rabbit_mq.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },
+    {
+      "name": "Firebase",
+      "x": 60,
+      "y": 20,
+      "marker": {
+        "symbol": "url(images/infrastructure/firebase.png)",
+        "width": 91,
+        "height": 25
+      },
+      "isShow": true
+    },    
+    {
+      "name": "GitHub",
+      "x": 84,
+      "y": 66,
+      "marker": {
+        "symbol": "url(images/tools/gitHub.png)",
+        "width": 42,
+        "height": 42
+      },
+      "isShow": true
+    },
+    {
+      "name": "Jira",
+      "x": 87,
+      "y": 50,
+      "marker": {
+        "symbol": "url(images/tools/jira.png)",
+        "width": 42,
+        "height": 42
+      },
+      "isShow": true
+    },
+    {
+      "name": "Oracle Sql Developer",
+      "x": 95,
+      "y": 50,
+      "marker": {
+        "symbol": "url(images/tools/sqlDeveloper.png)",
+        "width": 40,
+        "height": 40
+      },
+      "isShow": true
+    },
+    {
+      "name": "Sql Server Management",
+      "x": 96,
+      "y": 62,
+      "marker": {
+        "symbol": "url(images/tools/sqlMgmt.jpg)",
+        "width": 40,
+        "height": 40
+      },
+      "isShow": true
+    },
+    {
+      "name": "TeamCity",
+      "x": 81,
+      "y": 40,
+      "marker": {
+        "symbol": "url(images/tools/teamCity.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },
+    {
+      "name": "Visual Studio",
+      "x": 79,
+      "y": 80,
+      "marker": {
+        "symbol": "url(images/tools/vs.png)",
+        "width": 70,
+        "height": 37
+      },
+      "isShow": true
+    },  
+    {
+      "name": "Visual Studio Code",
+      "x": 90,
+      "y": 70,
+      "marker": {
+        "symbol": "url(images/tools/vs_code.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },  
+    {
+      "name": "Tableau",
+      "x": 87,
+      "y": 30,
+      "marker": {
+        "symbol": "url(images/tools/tableau.png)",
+        "width": 38,
+        "height": 38
+      },
+      "isShow": true
+    },
+    {
+      "name": "Terraform",
+      "x": 78,
+      "y": 57,
+      "marker": {
+        "symbol": "url(images/tools/terraform.png)",
+        "width": 38,
+        "height": 42
+      },
+      "isShow": true
+    },
+    {
+      "name": "Azure DevOps",
+      "x": 96,
+      "y": 75,
+      "marker": {
+        "symbol": "url(images/tools/azure_devops.png)",
+        "width": 38,
+        "height": 37
+      },
+      "isShow": true
+    }    
+  ]
+}
