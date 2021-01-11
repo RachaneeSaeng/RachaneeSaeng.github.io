@@ -52,9 +52,6 @@ function Portfolio() {
         {photos.length > 0 ? (
           <PhotoSwipeGallery
             items={photos}
-            options={{
-              modal: false,
-            }}
             thumbnailContent={(item) => getThumbnailContent(item)}
           />
         ) : (
