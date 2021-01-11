@@ -12,6 +12,7 @@ import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate } from 'workbox-strategies';
+import generatePrecacheItems from './serviceWorkerPrecache';
 
 clientsClaim();
 
@@ -20,6 +21,7 @@ clientsClaim();
 // This variable must be present somewhere in your service worker file,
 // even if you decide not to use precaching. See https://cra.link/PWA
 precacheAndRoute(self.__WB_MANIFEST);
+//precacheAndRoute(generatePrecacheItems());
 
 // Set up App Shell-style routing, so that all navigation requests
 // are fulfilled with your index.html shell. Learn more at
@@ -48,11 +50,27 @@ registerRoute(
 
 // An example runtime caching route for requests that aren't handled by the
 // precache, in this case same-origin .png requests like those from in public/
+const imagesRegexp = new RegExp(/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i);
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
-  ({ url }) => url.origin === self.location.origin && url.pathname.endsWith('.png'), // Customize this strategy as needed, e.g., by changing to CacheFirst.
+  ({ request, url }) =>
+    request.url.match(imagesRegexp) || url.pathname.match(imagesRegexp),
   new StaleWhileRevalidate({
     cacheName: 'images',
+    plugins: [
+      // Ensure that once this runtime cache reaches a maximum size the
+      // least-recently used images are removed.
+      new ExpirationPlugin({ maxEntries: 150 }),
+    ],
+  })
+);
+
+registerRoute(
+  // Add in any other file extensions or routing criteria as needed.
+  ({ request, url }) =>
+    request.url.match(imagesRegexp) || url.pathname.endsWith('.json'),
+  new StaleWhileRevalidate({
+    cacheName: 'jsons',
     plugins: [
       // Ensure that once this runtime cache reaches a maximum size the
       // least-recently used images are removed.

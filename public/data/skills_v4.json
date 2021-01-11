@@ -23,6 +23,17 @@
       "isShow": true
     },
     {
+      "name": "Selenium",
+      "x": 20,
+      "y": 40,
+      "marker": {
+        "symbol": "url(images/frontend/selenium.png)",
+        "width": 38,
+        "height": 34
+      },
+      "isShow": true
+    },
+    {
       "name": "TypeScript",
       "x": 11,
       "y": 60,
@@ -35,7 +46,7 @@
     },
     {
       "name": "React",
-      "x": 16,
+      "x": 18,
       "y": 65,
       "marker": {
         "symbol": "url(images/frontend/react.png)",
@@ -71,7 +82,7 @@
       "x": 14,
       "y": 43,
       "marker": {
-        "symbol": "url(images/frontend/webpack.jpg)",
+        "symbol": "url(images/frontend/webpack.png)",
         "width": 40,
         "height": 42
       },
@@ -134,8 +145,8 @@
     },
     {
       "name": "Python",
-      "x": 29,
-      "y": 20,
+      "x": 30,
+      "y": 23,
       "marker": {
         "symbol": "url(images/backend/python.png)",
         "width": 38,
@@ -156,7 +167,7 @@
     },
     {
       "name": "GraphQL",
-      "x": 30,
+      "x": 32,
       "y": 65,
       "marker": {
         "symbol": "url(images/backend/graphql.png)",
@@ -166,19 +177,8 @@
       "isShow": true
     },
     {
-      "name": "Selenium",
-      "x": 37,
-      "y": 50,
-      "marker": {
-        "symbol": "url(images/backend/selenium.png)",
-        "width": 38,
-        "height": 34
-      },
-      "isShow": true
-    },
-    {
       "name": "SpecFlow",
-      "x": 45,
+      "x": 43,
       "y": 47,
       "marker": {
         "symbol": "url(images/backend/specflow.png)",
@@ -189,7 +189,7 @@
     },
     {
       "name": "gRPC",
-      "x": 30,
+      "x": 34,
       "y": 45,
       "marker": {
         "symbol": "url(images/backend/grpc.png)",
@@ -365,7 +365,7 @@
     },
     {
       "name": "TeamCity",
-      "x": 78,
+      "x": 81,
       "y": 40,
       "marker": {
         "symbol": "url(images/tools/teamCity.png)",
@@ -387,7 +387,7 @@
     },  
     {
       "name": "Visual Studio Code",
-      "x": 89,
+      "x": 90,
       "y": 70,
       "marker": {
         "symbol": "url(images/tools/vs_code.png)",
