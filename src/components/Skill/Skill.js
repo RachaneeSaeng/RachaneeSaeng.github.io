@@ -175,7 +175,7 @@ function Skill() {
   }
 
   async function setupChart() {
-    var response = await fetch('data/skills_v4.json');
+    var response = await fetch('data/skills_v5.json');
     if (response && response.ok) {
       var json = await response.json();
       skillData = json.data;

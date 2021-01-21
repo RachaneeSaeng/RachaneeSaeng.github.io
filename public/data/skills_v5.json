@@ -3,7 +3,7 @@
     {
       "name": "Angular",
       "x": 5,
-      "y": 70,
+      "y": 65,
       "marker": {
         "symbol": "url(images/frontend/angular.png)",
         "width": 40,
@@ -14,7 +14,7 @@
     {
       "name": "Cypress",
       "x": 3,
-      "y": 55,
+      "y": 50,
       "marker": {
         "symbol": "url(images/frontend/cypress.png)",
         "width": 38,
@@ -25,7 +25,7 @@
     {
       "name": "Selenium",
       "x": 20,
-      "y": 40,
+      "y": 38,
       "marker": {
         "symbol": "url(images/frontend/selenium.png)",
         "width": 38,
@@ -36,7 +36,7 @@
     {
       "name": "TypeScript",
       "x": 11,
-      "y": 60,
+      "y": 55,
       "marker": {
         "symbol": "url(images/frontend/typeScript.png)",
         "width": 40,
@@ -47,7 +47,7 @@
     {
       "name": "React",
       "x": 18,
-      "y": 65,
+      "y": 59,
       "marker": {
         "symbol": "url(images/frontend/react.png)",
         "width": 45,
@@ -57,8 +57,8 @@
     },
     {
       "name": "Progressive Web App",
-      "x": 17,
-      "y": 54,
+      "x": 18,
+      "y": 49,
       "marker": {
         "symbol": "url(images/frontend/pwa.png)",
         "width": 38,
@@ -69,7 +69,7 @@
     {
       "name": "Saas",
       "x": 9,
-      "y": 47,
+      "y": 42,
       "marker": {
         "symbol": "url(images/frontend/sass.png)",
         "width": 38,
@@ -80,7 +80,7 @@
     {
       "name": "Webpack",
       "x": 14,
-      "y": 43,
+      "y": 40,
       "marker": {
         "symbol": "url(images/frontend/webpack.png)",
         "width": 40,
@@ -91,7 +91,7 @@
     {
       "name": "Less",
       "x": 4,
-      "y": 37,
+      "y": 32,
       "marker": {
         "symbol": "url(images/frontend/less.jpg)",
         "width": 52,
