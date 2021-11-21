@@ -1,6 +1,6 @@
-import './Experience.scss';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import "./Experience.scss";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 
 function Experience() {
   return (
@@ -10,10 +10,39 @@ function Experience() {
       <Grid item xs={12} sm={8} lg={6} className="contentLine">
         <div className="left">
           <Typography variant="h6" className="majorContent">
+            Thoughtworks
+          </Typography>
+          <Typography variant="subtitle1" className="majorContent">
+            Senior Developer Consultant: <em>March 2021 - present</em>
+          </Typography>
+          <Typography variant="subtitle1" className="majorContent">
+            <ul>
+              <li>
+                Provide technical consultancy to clients to evolve their
+                technologies and practices.
+              </li>
+              <li>
+                Deliver high-quality software in continuous integration and
+                delivery practices.
+              </li>
+              <li>
+                Maintain a high level of code quality by ensuring the best
+                practices and design patterns are strongly applied through the
+                development process.
+              </li>
+              <li>
+                Coach, mentor, and facilitate technical discussions to support
+                building team competencies.
+              </li>
+            </ul>
+          </Typography>
+        </div>
+        <div className="left">
+          <Typography variant="h6" className="majorContent">
             MyWorkpapers
           </Typography>
           <Typography variant="subtitle1" className="majorContent">
-            Lead Software Engineer: <em>Jan 2019 - present</em>
+            Lead Software Engineer: <em>January 2019 - January 2021</em>
           </Typography>
           <Typography variant="subtitle1" className="majorContent">
             <ul>
@@ -48,7 +77,7 @@ function Experience() {
               </li>
               <li>
                 Developed products, then demonstrated and assisted pilot
-                customers to try them.{' '}
+                customers to try them.{" "}
               </li>
             </ul>
           </Typography>
